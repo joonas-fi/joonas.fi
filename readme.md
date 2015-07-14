@@ -1,10 +1,8 @@
 
-Preparing the server for the remote deploy script
-=================================================
+Configuration
+=============
 
-Edit the script: `serverside_deploy.sh`
-
-Then copy this script to your home directory on the server.
+Edit the SSH command in deploy.sh
 
 Deploying the blog
 ==================
