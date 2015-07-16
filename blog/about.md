@@ -1,19 +1,15 @@
 ---
 layout: page
-title: About Pixyll
+title: About
 permalink: /about/
 ---
 
-This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
-([@4lpine](https://twitter.com/4lpine)).
+![My Facebook profile pic](https://graph.facebook.com/1359885168/picture?type=large)
 
-Checkout the [Github repository](https://github.com/johnotander/pixyll) to download it,
-request a feature, report a bug, or contribute. It's free, and open source
-([MIT](http://opensource.org/licenses/MIT)).
+My name is Joonas, and I'm a software engineer from Finland. My current interests are:
 
-Thanks to the following:
-
-* [BASSCSS](http://basscss.com)
-* [Jekyll](http://jekyllrb.com)
-* [Refills](http://refills.bourbon.io/)
-* [Type Scale](http://type-scale.com/)
+- Distributed systems
+- CoreOS, docker
+- Compilers, parsers
+- EventSourcing
+- Electronics, Raspberry Pi, Arduino
