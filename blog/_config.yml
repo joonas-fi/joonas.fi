@@ -4,7 +4,7 @@ email:       joonas@joonas.fi
 author:      Joonas
 description: "Yeah."
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://joonas.fi" # the base hostname & protocol for your site
+url: "https://joonas.fi" # the base hostname & protocol for your site
 
 # Google analytics
 google_analytics:
