@@ -5,7 +5,15 @@ date:       2015-07-14 19:03:00
 # summary:    This is an empty post to illustrate the pagination component with Pixyll.
 ---
 
-See also my answer in [StackOverflow](http://stackoverflow.com/questions/6490898/node-js-forward-all-traffic-from-port-a-to-port-b/19637388#19637388).
+Use like this:
+
+	$ node proxy.js 9001 80
+
+Or forwarding to remote host:
+
+	$ node proxy.js 9001 otherhost:80
+
+Source (save as proxy.js):
 
 {% highlight javascript %}
 var net = require('net');
@@ -32,3 +40,5 @@ net.createServer(function(from) {
     to.pipe(from);
 }).listen(addr.from[3], addr.from[2]);
 {% endhighlight %}
+
+See also my answer in [StackOverflow](http://stackoverflow.com/questions/6490898/node-js-forward-all-traffic-from-port-a-to-port-b/19637388#19637388).
