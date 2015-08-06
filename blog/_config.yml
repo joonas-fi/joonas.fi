@@ -7,7 +7,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://joonas.fi" # the base hostname & protocol for your site
 
 # Google analytics
-google_analytics:
+google_analytics: "UA-24122659-1"
 
 # Optional features
 animated:           true
