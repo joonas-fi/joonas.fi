@@ -30,9 +30,9 @@ Get a website certificate
 
 1) Validate your domain
 
-   1.1) "Validations Wizard" > Domain name validation > <domain>
+   1.1) "Validations Wizard" > Domain name validation > [domain]
 
-   1.2) Email: webmaster@<domain>
+   1.2) Email: webmaster@[domain]
 
    1.3) Check your email for the validation code
 
@@ -48,7 +48,7 @@ Get a website certificate
 
    3.2) Generate CSR (Certificate Signing Request) file.
 
-        $ openssl req -new -key ssl.key -batch -out <domain>.csr
+        $ openssl req -new -key ssl.key -batch -out [domain].csr
 
         (The -batch switch only works with StartSSL.com, because all they grab from .csr is the public key)
 
@@ -56,13 +56,13 @@ Get a website certificate
 
    3.4) Add "www" as the subdomain, or something else if you know what you're doing
 
-   3.5) Continue > Download the signed .crt file. Save it as <domain>.crt
+   3.5) Continue > Download the signed .crt file. Save it as [domain].crt
 
    3.6) You can safely remove the .csr (signing request) file
 
-   3.7) In the settings of your tls-compliant software, point to the ssl.key and <domain>.crt files
+   3.7) In the settings of your tls-compliant software, point to the ssl.key and [domain].crt files
 
-        Optionally, you can bake them all into one file: cat ssl.key <domain>.crt > certs.pem
+        Optionally, you can bake them all into one file: cat ssl.key [domain].crt > certs.pem
 
 
 Hat tips
