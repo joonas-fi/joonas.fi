@@ -2,7 +2,7 @@
 layout: post
 title: Microsoft Installer framework (you know, those .msi files)
 date: '2015-03-11T19:58:23+00:00'
-tags: []
+tags: ['programming']
 tumblr_url: http://joonas-fi.tumblr.com/post/113354531887/microsoft-installer-framework-you-know-those
 ---
 

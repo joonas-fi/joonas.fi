@@ -2,7 +2,7 @@
 layout: post
 title: ! 'putty:[profile] URL handler'
 date: '2013-01-26T14:49:00+00:00'
-tags: []
+tags: ['programming']
 tumblr_url: http://joonas-fi.tumblr.com/post/41517045456/putty-profile-protocol-handler
 ---
 

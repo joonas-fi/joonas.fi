@@ -2,7 +2,7 @@
 layout: post
 title: Latency numbers every programmer should know
 date: '2014-10-04T18:56:10+00:00'
-tags: []
+tags: ['programming']
 tumblr_url: http://joonas-fi.tumblr.com/post/99142999972/latency-numbers-every-programmer-should-know
 ---
 

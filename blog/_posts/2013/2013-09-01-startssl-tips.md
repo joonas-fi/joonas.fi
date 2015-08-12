@@ -2,7 +2,7 @@
 layout: post
 title: StartSSL tips
 date: '2013-09-01T15:11:46+00:00'
-tags: []
+tags: ['programming']
 tumblr_url: http://joonas-fi.tumblr.com/post/59966941169/startssl-tips
 ---
 (this post is mainly my own notes, so it might not be that useful, but I decided to post it anyway so I'll find it later)

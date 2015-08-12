@@ -2,7 +2,7 @@
 layout: post
 title: ! 'SQL databases are fundamentally non-scalable'
 date: '2013-01-27T11:51:46+00:00'
-tags: []
+tags: ['programming']
 tumblr_url: http://joonas-fi.tumblr.com/post/41598056448/theres-a-lot-of-things-i-can-say-about-using
 ---
 

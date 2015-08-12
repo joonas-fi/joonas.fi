@@ -2,6 +2,7 @@
 layout:     post
 title:      'Poor tax communication from Digitalocean'
 date:       2015-08-06 10:03:00
+tags:       ['usability']
 ---
 
 Tax related issues [are never too easy](http://www.forbes.com/sites/janetnovack/2014/05/15/european-vat-10-things-online-sellers-need-to-know-about-taxes-on-digital-goods-and-services/), so in communicating changes to your billing related tax procedures should be explained very clearly.

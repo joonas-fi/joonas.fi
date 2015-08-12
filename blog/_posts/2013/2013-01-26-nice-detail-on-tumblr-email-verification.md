@@ -2,7 +2,7 @@
 layout: post
 title: Nice detail on tumblr email verification
 date: '2013-01-26T14:27:00+00:00'
-tags: []
+tags: ['design']
 tumblr_url: http://joonas-fi.tumblr.com/post/41516345170/nice-detail-on-tumblr-email-verification
 ---
 

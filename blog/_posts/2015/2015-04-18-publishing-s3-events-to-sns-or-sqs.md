@@ -2,7 +2,7 @@
 layout: post
 title: Publishing S3 events to SNS or SQS
 date: '2015-04-18T10:24:41+00:00'
-tags: []
+tags: ['programming']
 tumblr_url: http://joonas-fi.tumblr.com/post/116709891827/publishing-s3-events-to-a-sns-or-sqs
 ---
 

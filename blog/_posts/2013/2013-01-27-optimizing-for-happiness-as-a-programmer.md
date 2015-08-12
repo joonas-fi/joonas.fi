@@ -2,7 +2,7 @@
 layout: post
 title: Optimizing for happiness (as a programmer)
 date: '2013-01-27T11:43:13+00:00'
-tags: []
+tags: ['programming', 'life']
 tumblr_url: http://joonas-fi.tumblr.com/post/41597785505/optimizing-for-happiness-as-a-programmer
 ---
 

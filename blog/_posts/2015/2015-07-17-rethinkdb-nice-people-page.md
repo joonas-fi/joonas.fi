@@ -2,6 +2,7 @@
 layout:     post
 title:      'RethinkDB: nice "people" -page'
 date:       2015-07-17 00:23:00
+tags:       ['design']
 ---
 
 ![](/images/2015/07/rethinkdb-nice-page.png)
