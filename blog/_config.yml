@@ -6,6 +6,10 @@ description: "Yeah."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://joonas.fi" # the base hostname & protocol for your site
 
+# jekyll-tagging plugin
+tag_page_layout: tag_page
+tag_page_dir: tag
+
 # Google analytics
 google_analytics: "UA-24122659-1"
 
