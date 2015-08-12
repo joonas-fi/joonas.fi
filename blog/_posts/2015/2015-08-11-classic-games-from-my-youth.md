@@ -214,6 +214,9 @@ What are your nostalgic games? :)
 # Pitfall
 ![](/images/2015/08/classic_games/pitfall.png)
 
+# Pontifex 2
+![](/images/2015/08/classic_games/pontifex_2.jpg)
+
 # Prince Of Persia
 ![](/images/2015/08/classic_games/prince_of_persia.jpg)
 
@@ -336,6 +339,9 @@ What are your nostalgic games? :)
 
 # Transport Tycoon Deluxe
 ![](/images/2015/08/classic_games/transport_tycoon_deluxe.jpg)
+
+# Triplane Turmoil
+![](/images/2015/08/classic_games/triplane_turmoil.png)
 
 # Turok: dinosaur Hunter
 ![](/images/2015/08/classic_games/turok-dinosaur_hunter.png)
