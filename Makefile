@@ -8,7 +8,7 @@ all: build
 build:
 	rm -rf build/
 	docker rm jekyll-builder || true
-	docker run --name jekyll-builder --volume /vagrant/blog:/src:ro joonas/jekyll-builder:0.1.0
+	docker run --name jekyll-builder --volume /vagrant/work/blog/blog:/src:ro joonas/jekyll-builder:0.1.0
 	docker cp jekyll-builder:/build .
 
 	docker build -t $(NAME):$(VERSION) .
