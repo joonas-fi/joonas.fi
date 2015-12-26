@@ -30,9 +30,9 @@ Now start the site:
 
 	$ make preview
 
-Now the site should be accessible at:
+Now the site should be accessible (preview hostname) at:
 
-	http://joonas.fi.127.0.0.1.xip.io/
+	http://joonas.fi.dev.xs.fi/
 
 Deploying the blog
 ==================
@@ -43,4 +43,4 @@ On dev machine:
 
 After that, on production:
 
-	$ docker rm -f joonas_fi; docker run -d --name joonas_fi dkr.xs.fi/joonas_fi:<version>
+	$ docker rm -f joonas_fi; docker run -d --name joonas_fi joonas/joonas.fi:latest
