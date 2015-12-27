@@ -43,4 +43,4 @@ On dev machine:
 
 After that, on production:
 
-	$ docker rm -f joonas_fi; docker run -d --name joonas_fi joonas/joonas.fi:latest
+	$ docker rm -f joonas_fi; docker pull joonas/joonas.fi:latest && docker run -d --name joonas_fi joonas/joonas.fi:latest
