@@ -1,5 +1,4 @@
-FROM kyma/docker-nginx
-COPY build/ /var/www
-CMD 'nginx'
+FROM smebberson/alpine-nginx
+COPY build/ /usr/html
 
 ENV VIRTUAL_HOST joonas.fi
