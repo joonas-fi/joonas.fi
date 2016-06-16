@@ -1,46 +1,22 @@
+What
+====
 
-Prerequisites
-=============
+This is source code for my [personal blog](https://joonas.fi/), powered by Jekyll.
 
-Have Docker installed:
+It gets built as a static site, shoved inside a Docker image with a bare static HTTP server.
 
-	$ curl -sSL https://get.docker.com/ | sh
+Dev mode
+========
 
-Building the Jekyll site
-========================
+For testing the content before making an actual build:
 
-Just run:
+	$ docker run --rm -it -v "$(pwd):/project" -e VIRTUAL_HOST=joonas-blog.dev-laptop.xs.fi -p 8080 joonas/jekyll-builder:0.1.0 jekyll serve -H 0.0.0.0 -P 8080 --source /project/blog/ --destination /tmp
 
-	$ make
+Assuming you have configured nginx-proxy, the blog is now previewable at host "joonas-blog.dev-laptop.xs.fi".
 
-This will use joonas/jekyll-builder to build the Jekyll site, and stuff the build artifact
-from that into a container based on docker-nginx, which is just a nginx serving a static site.
+nginx-proxy
+===========
 
-Previewing the site
-===================
-
-If you don't have nginx-proxy already running:
+This is about how you would run nginx-proxy:
 
 	$ docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy
-
-Of course you can make do without nginx-proxy and just expose the container's port 80 on host 80,
-but this example is because that's what I use in production to provide virtual hosting over different containers.
-
-Now start the site:
-
-	$ make preview
-
-Now the site should be accessible (preview hostname) at:
-
-	http://joonas.fi.dev.xs.fi/
-
-Deploying the blog
-==================
-
-On dev machine:
-
-	$ make push
-
-After that, on production:
-
-	$ docker rm -f joonas_fi; docker pull joonas/joonas.fi:latest && docker run -d --name joonas_fi joonas/joonas.fi:latest
