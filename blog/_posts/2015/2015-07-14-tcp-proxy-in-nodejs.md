@@ -1,9 +1,8 @@
 ---
 layout:     post
-title:      TCP proxy in node.js
+title:      'TCP proxy in node.js'
 date:       2015-07-14 19:03:00
 tags:       ['programming']
-# summary:    This is an empty post to illustrate the pagination component with Pixyll.
 ---
 
 Use like this:
@@ -16,30 +15,5 @@ Or forwarding to remote host:
 
 Source (save as proxy.js):
 
-{% highlight javascript %}
-var net = require('net');
-
-// parse "80" and "localhost:80" or even "42mEANINg-life.com:80"
-var addrRegex = /^(([a-zA-Z\-\.0-9]+):)?(\d+)$/;
-
-var addr = {
-    from: addrRegex.exec(process.argv[2]),
-    to: addrRegex.exec(process.argv[3])
-};
-
-if (!addr.from || !addr.to) {
-    console.log('Usage: <from> <to>');
-    return;
-}
-
-net.createServer(function(from) {
-    var to = net.createConnection({
-        host: addr.to[2],
-        port: addr.to[3]
-    });
-    from.pipe(to);
-    to.pipe(from);
-}).listen(addr.from[3], addr.from[2]);
-{% endhighlight %}
-
-See also my answer in [StackOverflow](http://stackoverflow.com/questions/6490898/node-js-forward-all-traffic-from-port-a-to-port-b/19637388#19637388).
+The code used to be pasted here, but apparently Jekyll (the static blog generator) has a bug with it,
+so find the code from my answer at [StackOverflow](http://stackoverflow.com/questions/6490898/node-js-forward-all-traffic-from-port-a-to-port-b/19637388#19637388).
