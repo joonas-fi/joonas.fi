@@ -2,7 +2,7 @@
 title:       joonas.fi
 email:       joonas@joonas.fi
 author:      Joonas
-description: "Yeah."
+description: "It's time to boss up."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://joonas.fi" # the base hostname & protocol for your site
 
