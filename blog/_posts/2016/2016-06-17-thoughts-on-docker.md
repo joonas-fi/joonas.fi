@@ -216,7 +216,7 @@ This scheme is clever, I'll give them that. But clever is the arch enemy of simp
 
 Sidenote: for private registries, all that cuteness in the naming amounts to nothing. This is how one of my image is named:
 
-	329074924855.dkr.ecr.us-east-1.amazonaws.com/fleet-tracker-inbound:20160612_0900_01280ac415ca
+	329074924855.dkr.ecr.us-east-1.amazonaws.com/joonas.fi-blog:20160617_1059_6be5719088c5
 
 Here's how it looks in the output of `$ docker ps` command:
 
