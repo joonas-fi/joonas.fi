@@ -264,3 +264,12 @@ Not respecting already published tags
 -------------------------------------
 
 Just today I noticed that a *recent* tag I was using from official Redis repo was silently removed. This is why for important images I'll keep a personal mirror of the important images I want to refer to.
+
+Running another command in a stopped container
+----------------------------------------------
+
+When a container is running, you can run another commands in it. E.g. if you started Redis as a container, you can open a Bash shell in it as well.
+
+But if a container is stopped, all you can do is start the container with the same command (redis). You cannot have a shell in it anymore. All you can do is start it using the same command as you originally started the container with. Which is a shame, since if the container's start command fails (e.g. data corruption in a database), you cannot shell in to investigate.
+
+Source: [https://forums.docker.com/t/run-command-in-stopped-container/343/11](https://forums.docker.com/t/run-command-in-stopped-container/343/11)
