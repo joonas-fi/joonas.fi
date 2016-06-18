@@ -5,7 +5,7 @@ date:       2016-06-17 00:00:00
 tags:       ['programming']
 ---
 
-Now that I've been actively messing around with Docker for more than 6 months, and run all my production software on top of it, its a good time to share my findings.
+Now that I've been actively messing around with Docker for more than 6 months, and run production software on top of it, it's a good time to share my findings.
 
 tl;dr: Docker has some disgusting warts, but the sum of positive and negative points is clearly on the positive side. I fucking love Docker for the problems it solves, as I get to focus on the actual problems I'm solving with my software, instead of the mundane shit I'd have to deal with without it (configuring dev, build/testing and production environments + how do I deliver and deploy this to production?).
 
