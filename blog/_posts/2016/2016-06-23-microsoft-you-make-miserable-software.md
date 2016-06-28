@@ -25,8 +25,8 @@ Also, I don't need or want to use OneDrive, that's in-your-face-visible all the 
 ![](/images/2016/06/23-onedrive-in-your-face.png)
 
 But Microsoft has chosen not to let me uninstall it. It is **not found** from `Add or remove programs`.
-There's an unofficial magic command for getting rid of
-[OneDrive](http://www.howtogeek.com/225973/how-to-disable-onedrive-and-remove-it-from-file-explorer-on-windows-10/),
+There's an unofficial magic command for
+[getting rid of OneDrive](http://www.howtogeek.com/225973/how-to-disable-onedrive-and-remove-it-from-file-explorer-on-windows-10/),
 but it did not work for me.
 
 "Fun" sidenote: there are some Microsoft-forced apps in `Add or remove programs`, but Microsoft just won't let you remove them:
@@ -36,6 +36,26 @@ but it did not work for me.
 All of this Microsoft's attitude makes me uncomfortable in the future of Windows 10
 (["the last version of Windows"](http://www.theverge.com/2015/5/7/8568473/windows-10-last-version-of-windows)).
 I don't trust them one bit not to make things even worse.
+
+Windows 10 spyware
+------------------------------------------
+
+Did you know that by default
+[Microsoft steals your Wifi passwords and sends them to Microsoft](http://money.cnn.com/2015/07/30/technology/windows10-wifi-sense/)?
+
+This is done for a friendly-sounding reason:
+
+> To let your Facebook/Outlook/Skype friends log in to your Wifi without them having to ask for your password.
+
+You have to specifically know to disable that feature for Windows not to do that. And as seen many times before, Microsoft
+doesn't seem to care for the choices you make, and will "accidentally"
+[revert your settings along Windows updates](http://www.makeuseof.com/tag/5-settings-must-check-windows-10-fall-update/)
+to their privacy-disrespecting defaults.
+
+And even if you disable this feature, all it takes is **one friend** logging in to your Wifi with that feature left on (laptop or phone),
+and you have lost your password to Microsoft, and quite probably, the NSA (since Microsoft [gladly co-operates](http://techrights.org/wiki/index.php/Microsoft_and_the_NSA)).
+
+This is just the tip of the iceberg regarding privacy issues with Windows 10, I'm pretty sure. I haven't bother to research more.
 
 Linux's Bash vs. Windows' cmd & Powershell
 ------------------------------------------
