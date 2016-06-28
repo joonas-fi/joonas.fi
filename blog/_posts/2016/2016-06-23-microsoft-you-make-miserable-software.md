@@ -126,7 +126,7 @@ Skype
 Issues:
 
 - Sub-standard sustained video quality. Both me and my discussion partner have a decent connection (I can watch 4k content on Youtube). Sometimes the quality was
-  fine, but too many times it seemed to downgrade for no reason. Here's a screenshot of a conversation quality, that unfortunately was far too common:
+  fine, but too many times it seemed to downgrade for no reason. Here's a screenshot of the video quality, that unfortunately was far too common:
   ![](/images/2016/06/23-skype-video-quality.png)
 - If Skype (for Android) loses focus (intentionally, or someone regular-calls me), I cannot get back to the video call I had in progress.
   I have to exit Skype and call again.
@@ -146,8 +146,8 @@ Apparently you think it's ok to
 [force a major OS upgrade on your customers without asking first](http://www.infoworld.com/article/3029613/microsoft-windows/new-details-emerge-about-forced-windows-10-upgrade-and-how-to-block-it.html).
 
 I have some clients who had headache from this and me being their sysadmin, it ultimately was my job to spend time dealing
-with your bad decisions and research a fucking third-party software to disable this "we do whatever we want" -policy,
-because apparently there's no UI for doing it, because you people are so arrogant.
+with your bad decisions and research a fucking [third-party software](https://www.grc.com/never10.htm) (thanks Steve from grc.com!)
+to disable this "we do whatever we want" -policy, because apparently there's no UI for doing it, because you people are so arrogant.
 
 Applying major updates without warning
 --------------------------------------
@@ -160,7 +160,7 @@ but I was not informed about it. And system restore does not make much sense in 
 I last shut down my computer it was in a normal state.
 
 Apparently you think it's ok to out-of-the-blue decide that I'm not needing my computer for 30 minutes. Do you even realize that sometimes
-it could be a life-or-death situation, needing some information from a computer or from Internet, and just not letting the customer
+it *could be* a **life-or-death situation**, needing some information from a computer or from Internet, and just not letting the user
 access his/her computer for 30 minutes **could cause some serious harm to someone**? How can you think this is acceptable?
 
 Sidetracking a bit here:
@@ -173,7 +173,7 @@ How's that possible, since I don't even remember the years when a generic HID-co
 Linux is awesome as a server, but as a desktop it is not there. And Microsoft seems to know that we don't have a fucking choice - how else
 would they dare to treat their users this way? If users would have a sensible option, everyone would switch away from Microsoft's crap.
 
-In my eyes the only major thing Microsoft has is critical mass in desktop operating system users. If Microsoft would lose it, or a
+In my eyes the only meaningful advantage Microsoft has is critical mass in desktop operating system users. If Microsoft would lose it, or a
 sizable portion would switch to Linux, the manufacturers would have to start supplying device drivers for the Linux kernel, eliminating
 the biggest barrier to entry to Linux as a viable desktop operating system.
 
@@ -189,7 +189,7 @@ another case of "you just have to learn this the hard way"?
 
 Another story outside of the server context: my laptop shut itself down to apply updates, and that caused me to lose unsaved work. I had to work
 for more than 30 minutes to re-do the work that I had not saved, just because you guys are so arrogant as not to ask for a permission.
-Can I send you the bill for having to do extra work?
+Who do I send the bill for having to do extra work?
 
 Do you seriously think that every software can automatically save the work, in an unattended way, when the OS is telling the software that I am
 killing your process in a few seconds? Some software can automatically save work in an unattended way (e.g. the awesome [Sublime Text](https://www.sublimetext.com/)), but until that capability
@@ -206,11 +206,12 @@ Just recently, `svchost.exe` started taking 100 % of a single core and it's heat
 is going mental. That instance of svchost hosts Windows Update. How can I pinpoint the blame to Windows Update,
 since so many services run under svchost.exe - a general-purpose host for services?
 
-I'm glad you asked! I had to check that with a third-party tool because your own tools are so miserable. In Task Manager,
-when clicking on the offending process and selecting "Go to service(s)" shows around 20 services. Thanks for nothing..
+I'm glad you asked! I had to check that with a third-party tool,
+[Process Explorer](https://technet.microsoft.com/en-us/sysinternals/processexplorer.aspx), because your own tools are so
+miserable. In Task Manager, when clicking on the offending process and selecting "Go to service(s)" shows around 20 services.
+Thanks for nothing..
 
-Moving on, this is what the fantastic SysInternals' (nowadays bought by Microsoft)
-[Process Explorer](https://technet.microsoft.com/en-us/sysinternals/processexplorer.aspx) tells me:
+Moving on, this is what Process Explorer tells me:
 
 ![](/images/2016/06/23-windows-update-infinite-loop.png)
 
@@ -218,10 +219,10 @@ I'm pretty sure it's not normal for a single Windows Update thread to eat 45 min
 when the process had been started 45 minutes ago..
 
 I have to suspend that process from time to time (EDIT: I just remembered that I can suspend that thread without affecting system stability),
-but unfortunately it makes the system unstable and most times after suspending that process, I am unable to start any new processes.
-This makes my system currently unusable without reinstalling. The computer is in my living room, and I can't bear the sound of the fan +
-running 100 % even on a single core will rack up the electricity bill I suppose. Are you going to pay for the extra electricity caused
-by your buggy software?
+but unfortunately it makes the system unstable and most times after suspending that process, I am unable to start any new processes
+(or even power-off the computer). This makes my system currently unusable without reinstalling. The computer is in my living room, and
+I can't bear the sound of the fan + running 100 % even on a single core will rack up the electricity bill I suppose.
+Are you going to pay for the extra electricity caused by your buggy software?
 
 My Windows installation is so broken, it cannot even download new updates (most probably due to the infinite loop in `wuaueng.dll`).
 Here's the stack:
@@ -259,8 +260,8 @@ yielding "setup (2).msi" (or equivalent) will make for unexpected surprising beh
 Windows Installer concepts are so hard, it's no wonder there's a job title "Installation engineer" in the world. I totally now believe
 that in some companies there might be a dedicated person for building the setup packages, because you just make it so overly hard and complex.
 
-I get that installing Office or Visual Studio and it's million optional inter-connected dependencies is complex, but why do you impose the complexities of
-installing worst-case-scenario-complexity software on all other projects that are guaranteed to be less complex than what .msi was designed for?
+I get that installing Office or Visual Studio and its million optional inter-connected dependencies is complex, but why do you impose the complexities of
+installing worst-case-scenario-complexity software on all other projects that are almost all guaranteed to be less complex than what .msi was designed for?
 
 I speak from first-hand experience because unfortunately I had a customer that wanted to have my software installed via Windows Installer,
 instead of open source [NSIS installer framework](https://en.wikipedia.org/wiki/Nullsoft_Scriptable_Install_System) I first used.
@@ -300,7 +301,7 @@ How did your competitors ship something so important while *your users* are stil
 
 Especially you guys should have realized that, because so many instances of Windows software try to do so much stupid stuff
 (think 300 MB printer "drivers"), it'd be much better to give all software by default less privileges to mess up the system
-(read my previous poin on Windows breaking from time to time).
+(read my previous point on Windows breaking from time to time).
 
 p.s.
 
@@ -323,7 +324,7 @@ Nokia fiasco
 ------------
 
 In September 2013 Microsoft bought Nokia (a Finnish phone manufacturer you might have heard of, ten years ago when it still was
-relevant and not dying out of it's own arrogance), in hopes of gaining any relevance
+relevant and not dying out of its own arrogance), in hopes of gaining any relevance
 ([who really wants to use a Windows phone?](http://www.theverge.com/2016/5/23/11743594/microsoft-windows-phone-market-share-below-1-percent))
 with fierce competition from both the Android ecosystem and Apple's, **promising**:
 
