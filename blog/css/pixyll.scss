@@ -35,3 +35,18 @@
 @import 'measure';
 @import 'pagination';
 @import 'tagcloud';
+
+/* pompo500: fix god-ugly table style */
+
+article.post-content table {
+    margin-bottom: 20px !important;
+}
+
+article.post-content th {
+    text-align: left;
+    border-bottom: 0;
+}
+
+article.post-content table {
+    border-collapse: collapse;
+}
