@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      'Microsoft Azure's networking is fundamentally broken and unreliable'
+title:      'Microsoft Azure\'s networking is fundamentally broken and unreliable'
 date:       2017-01-23 15:56:00
 tags:       ['programming']
 ---
