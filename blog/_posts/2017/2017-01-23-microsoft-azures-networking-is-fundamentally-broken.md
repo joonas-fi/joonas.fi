@@ -89,21 +89,17 @@ Understanding the rule, `timeout is at 4 min of inactivity`, I tested this simpl
 
 Here's the the end result of the screen in the client:
 
-```
-$ nc <ip> 1234
-a
-b
-c
-```
+	$ nc <ip> 1234
+	a
+	b
+	c
 
 And the server:
 
-```
-$ nc -l -p 1234
-a
-b
-
-```
+	$ nc -l -p 1234
+	a
+	b
+	
 
 Sure enough, `c` did not arrive at the server. Timeout problem confirmed.
 
@@ -116,72 +112,66 @@ found was shocking: after timeout, even though their SNAT gateway effectively du
 their SNAT gateway acknowledges my packets by "thanks, I received your data". Here's the client screen:
 (after "a" I waited > 4 minutes, "b" through "g" were sent at ~1 sec intervals)
 
-```
-$ nc <ip> 1234
-a
-b
-c
-d
-e
-f
-g
-```
+	$ nc <ip> 1234
+	a
+	b
+	c
+	d
+	e
+	f
+	g
 
 Server:
 
-```
-$ nc -l -p 1234
-a
-
-```
+	$ nc -l -p 1234
+	a
+	
 
 And client's TCP traffic ([illustration on fundamentals](http://intronetworks.cs.luc.edu/1/html/_images/tcp_ladder_states.png)),
 in chronological order (`->` client-to-server, `<-` server-to-client):
 
-```
--> SYN
-<- SYN, ACK
--> ACK
+	-> SYN
+	<- SYN, ACK
+	-> ACK
 
--> PSH ("a")
-<- ACK
+	-> PSH ("a")
+	<- ACK
 
-(wait > 4 minutes. the server never sees the following conversation)
+	(wait > 4 minutes. the server never sees the following conversation)
 
--> PSH ("b")
-<- ACK
+	-> PSH ("b")
+	<- ACK
 
-(wait a bit)
+	(wait a bit)
 
--> PSH ("c")
-<- ACK
+	-> PSH ("c")
+	<- ACK
 
-(wait a bit)
+	(wait a bit)
 
--> PSH ("d")
-<- ACK
+	-> PSH ("d")
+	<- ACK
 
-(same here)
+	(same here)
 
--> PSH ("e")
-<- ACK
+	-> PSH ("e")
+	<- ACK
 
-(same here)
+	(same here)
 
--> PSH ("f")
-<- ACK
+	-> PSH ("f")
+	<- ACK
 
-(same here)
+	(same here)
 
--> PSH ("g")
-<- ACK
+	-> PSH ("g")
+	<- ACK
 
-(19 seconds later of the first undelivered "b" message, server closes socket gracefully)
+	(19 seconds later of the first undelivered "b" message, server closes socket gracefully)
 
-<- FIN, ACK
--> FIN, ACK
-<- ACK
-```
+	<- FIN, ACK
+	-> FIN, ACK
+	<- ACK
 
 Why is this an issue? Think of an alert button at a bank. The alert button keeps a TCP socket open to the
 alerting provider (hosted on Azure), perhaps to optimize for latency. A bank robber comes in, and an employee
