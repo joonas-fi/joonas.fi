@@ -5,7 +5,7 @@ date:       2017-02-20 20:05:00
 tags:       ['programming']
 ---
 
-Have this innocent looking code:
+Have this innocent looking code in [Golang](https://golang.org/):
 
 	func incrementWithoutLocking() int {
 		counter := 0
@@ -34,7 +34,7 @@ Have this innocent looking code:
 
 Also note, how easy it is to implement concurrency/parallelism
 ([though they are not the same thing](http://stackoverflow.com/questions/1050222/concurrency-vs-parallelism-what-is-the-difference))
-in [Golang](https://golang.org/)! :)
+in Golang! :)
 
 Now, observing return values:
 
