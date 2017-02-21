@@ -57,8 +57,9 @@ threads are simultaneously doing it, something like this happens:
 	thread B: increment by one, 10 + 1 = 11  (<-- this should have been 11 + 1 = 12)
 	thread B: store 11 in RAM
 
-This is called a race condition. This is the simplest and most obvious form of it,
-since we can see the counter numbers acting seemingly random and they are obviously incorrect.
+This is called a [race condition](http://stackoverflow.com/a/34550). This is the simplest and most
+obvious form of it, since we can see the counter numbers acting seemingly random and they are
+obviously incorrect.
 
 Sadly, in real life race conditions are much easier to accidentally introduce and
 really hard to debug.
