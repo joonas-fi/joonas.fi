@@ -208,7 +208,7 @@ I've wasted about a week in debugging this issue and when finally realizing what
 is, [working with a software vendor to patch around this artificial limitation](https://github.com/containous/traefik/issues/1046).
 
 It's infuriating because Azure requires special support from the software for it to work properly. If there
-wasn't a useless "SNAT gateway", errors would be appropriately handled at TCP level and packets no being `ACK`ed
+wasn't a useless "SNAT gateway", errors would be appropriately handled at TCP level and packets not being `ACK`ed
 would result in re-transmit. TCP is already reliable and good at detecting errors - Microsoft broke it.
 
 No serious cloud vendors have this issue. I tested all the solutions that are developed by grown-ups:
