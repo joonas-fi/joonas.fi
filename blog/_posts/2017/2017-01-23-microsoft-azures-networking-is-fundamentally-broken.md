@@ -1,9 +1,24 @@
 ---
 layout:     post
-title:      'Microsoft Azure´s networking is fundamentally broken and unreliable'
+title:      'Problems with Microsoft Azure´s networking'
 date:       2017-01-23 15:56:00
 tags:       ['programming']
 ---
+
+**UPDATE, IMPORTANT**
+=================
+
+Some of the claims in this post are inaccurate. The ACKed-but-undelivered problem lies either
+in my router or ISP - not Azure's fault.
+
+Until I research this topic more and update the article, these problems still stand:
+
+- Azure has a forced artificial limit, disconnecting session with >= 4 minutes of radio silence.
+  There is no technical requirement for this as the IP should have 1:1 mapping to the VM.
+- When a session is disconnected, all incoming packets are blackholed instead of issuing an RST
+  packet which would correctly let the sender know of connection issue, instead of just waiting and waiting.
+
+**END OF UPDATE**
 
 TL;DR: Azure has a nasty artificial limitation that results in being unable to
 use long-lived TCP connections that have >= 4 minutes of radio silence at any given point.
