@@ -28,9 +28,15 @@ I later checked this as correct.
 
 ![](/images/2017/03/toggl-2.png)
 
-I think I got most of those right, except for the buffer overflow thing (maybe
-all garbage collected languages have buffer bounds checks?). The concurrency
-question can probably be debated though.
+I think I got most of those right, except for maybe the concurrency question.
+Perhaps the question implied that the problem benefits from concurrency, while I
+was thinking that for non-concurrent problems non-concurrent code definitely
+uses less CPU and RAM because no context switching and no
+threading/synchronization overhead is needed.
+
+Buffer overflows are protected by bounds checks, which is not an explicit feature
+of GC-based languages but practically all of them implement bounds checks, so it
+might be debatable.
 
 ![](/images/2017/03/toggl-3.png)
 
