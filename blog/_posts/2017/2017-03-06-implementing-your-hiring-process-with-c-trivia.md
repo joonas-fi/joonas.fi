@@ -65,8 +65,9 @@ wasn't the issue), but the final assignment was to write C# code for this proble
 > For example: input: "If you know the enemy and know yourself you need not fear the results of a hundred battles" output: "know"
 
 I haven't written C# in ages, so I was really rusty and had to look up syntax
-and data structures all in that 20 min limit. Considering the time limit I
-think I did ok:
+and data structures all in that 20 min limit. Considering the time limit and
+fumbling on C# syntax I think I did ~ok (though I later realized it's about
+finding the first word with count=2 instead of finding word with the largest count):
 
     using System.Collections.Generic;
     
