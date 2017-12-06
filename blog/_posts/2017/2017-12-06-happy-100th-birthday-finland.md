@@ -19,15 +19,15 @@ The more I've become aware of politics and other issues that actually matter, I 
 and many other countries (don't even get me started on Trump the person or Trump the phenomenom..).
 Don't get me wrong, all countries have their own issues, but all in all Finland does many things right:
 
-- We have a welfare system where if you're having a hard time, the state helps you out. Homelessness
-  in Finland is basically a thing only for people with sever drug or alcohol problems.
+- We have a welfare system where if you're having a hard time, the state helps you out. In Finland
+  homelessness is basically a thing only for people with severe drug or alcohol problems.
 
 - [Our education system](http://www.businessinsider.com/finland-education-school-2011-12) is famous the world over.
 
 - Like many other nordic countries, our healthcare is essentially free.
 
 - There is no police brutality in Finland. Each time a police fires a weapon, a thorough investigation is
-  conducted. In ten years the police have fired a gun 122 times - killing only seven people in ten years.
+  conducted. In ten years the police have fired a gun 122 times - killing only seven people.
 
 - Finland is almost the [least corrupt country in the world](https://en.wikipedia.org/wiki/Corruption_Perceptions_Index#2016).
 
@@ -40,8 +40,8 @@ Don't get me wrong, all countries have their own issues, but all in all Finland 
 Cool things about Finland
 -------------------------
 
-Like I said, I used to think we're insignificant. That might stem from the fact that that
-I didn't know better, and also Finns are really modest. :)
+Like I said, I used to think we're insignificant. That might stem from the fact that
+I was young and stupid(er). And also, Finns are modest people. :)
 
 But now it's time to list a couple of cool things about Finland:
 
@@ -89,7 +89,7 @@ But now it's time to list a couple of cool things about Finland:
   I'm not kidding!
 
 - I've travelled quite a bit, and it seems that Finland is one of the only countries in the world
-  where the toilets don't splash when you pee on them. Million dollar business idea: export Finnish toilets.
+  where the toilets don't splash when you pee in them. Million dollar business idea: export Finnish toilets.
 
 
 Oversimplified history
@@ -100,7 +100,7 @@ For anybody interested in Finnish history, here's a short timeline:
 - Prehistoric times 
 - 1323: [first borders defined](https://en.wikipedia.org/wiki/Treaty_of_N%C3%B6teborg)
 - [1150 - 1350](https://en.wikipedia.org/wiki/Swedish_Crusades):
-  Gradual Swedish colonization due to spreading of Christianity. The colonization was not without resistance from Finns.
+  Gradual Swedish colonization, spreading of Christianity. The colonization was not without resistance from Finns.
 - [1808-1809](https://en.wikipedia.org/wiki/Finnish_War):
   Russia started a war with Sweden, capturing Finland.
 - [1809–1917](https://en.wikipedia.org/wiki/Grand_Duchy_of_Finland):
