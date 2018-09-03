@@ -1,0 +1,20 @@
+{
+	"for_description_of_this_file_see": "https://github.com/function61/turbobob",
+	"version_major": 1,
+	"project_name": "joonas.fi-blog",
+	"builders": [
+		{
+			"name": "default",
+			"mount_destination": "/project",
+			"dev_command": ["bash"],
+			"pass_envs": []
+		}
+	],
+	"docker_images": [
+		{
+			"image": "329074924855.dkr.ecr.us-east-1.amazonaws.com/joonas.fi-blog",
+			"dockerfile_path": "Dockerfile",
+			"auth_type": "aws_ecr"
+		}
+	]
+}
