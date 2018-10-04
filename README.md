@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/joonas-fi/joonas.fi-blog.svg?branch=master)](https://travis-ci.org/joonas-fi/joonas.fi-blog)
+[![Download](https://img.shields.io/docker/pulls/joonas/joonas.fi-blog.svg)](https://hub.docker.com/r/joonas/joonas.fi-blog/)
+
 What
 ====
 

@@ -12,9 +12,9 @@
 	],
 	"docker_images": [
 		{
-			"image": "329074924855.dkr.ecr.us-east-1.amazonaws.com/joonas.fi-blog",
+			"image": "joonas/joonas.fi-blog",
 			"dockerfile_path": "Dockerfile",
-			"auth_type": "aws_ecr"
+			"auth_type": "creds_from_env"
 		}
 	]
 }
