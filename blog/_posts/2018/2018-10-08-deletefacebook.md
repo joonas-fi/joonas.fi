@@ -8,7 +8,7 @@ tags:       ['programming']
 ![](/images/2018/deletefacebook_stock.png)
 
 .. well I'm more like "soft-deleting" Facebook. I just deleted my Facebook app from my Android
-phone, and stil plan use Facebook on my desktop. But this will decrease my Facebook use *significantly*:
+phone, and still plan use Facebook on my desktop. But this will decrease my Facebook use *significantly*:
 
 - Wake up: check Facebook on phone
 - Waiting on something: check Facebook on Phone
