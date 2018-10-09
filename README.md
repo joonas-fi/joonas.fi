@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/joonas-fi/joonas.fi-blog.svg?branch=master)](https://travis-ci.org/joonas-fi/joonas.fi-blog)
-[![Download](https://img.shields.io/docker/pulls/joonas/joonas.fi-blog.svg)](https://hub.docker.com/r/joonas/joonas.fi-blog/)
+[![Build Status](https://img.shields.io/travis/joonas-fi/joonas.fi-blog.svg?style=for-the-badge)](https://travis-ci.org/joonas-fi/joonas.fi-blog)
+[![Download](https://img.shields.io/docker/pulls/joonas/joonas.fi-blog.svg?style=for-the-badge)](https://hub.docker.com/r/joonas/joonas.fi-blog/)
 
 What
 ====
