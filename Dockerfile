@@ -1,2 +1,2 @@
-FROM joonas/staticwebsitebase:20160622_1331_26270e22f96e
-COPY build/ /usr/share/nginx/html
+FROM fn61/staticwebsite:20181014_1222_90c3c5af
+COPY build/ /www
