@@ -17,6 +17,9 @@ Web browser
 
 Avoid:
 
+- Edge: given IE's abysmal historical track record,
+  [why would I trust Microsoft not to screw up again](https://joonas.fi/2016/06/23/microsoft-you-make-miserable-software/)?
+  Fool me once, shame on you; fool me twice, shame on me.
 - Internet Explorer: IE has historically slowed down the progress of the web platform and has always been behind the innovation.
 
 Read PDF files
