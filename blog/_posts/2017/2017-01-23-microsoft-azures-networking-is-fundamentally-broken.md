@@ -6,7 +6,6 @@ tags:       ['programming']
 ---
 
 **UPDATE, IMPORTANT**
-=================
 
 Some of the claims in this post are inaccurate. The ACKed-but-undelivered problem lies either
 in my router or ISP - not Azure's fault.
