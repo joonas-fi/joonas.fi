@@ -55,13 +55,13 @@ to their privacy-disrespecting defaults.
 And even if you disable this feature, all it takes is **one friend** logging in to your Wifi with that feature left on (laptop or phone),
 and you have lost your password to Microsoft, and quite probably, the NSA (since Microsoft [gladly co-operates](http://techrights.org/wiki/index.php/Microsoft_and_the_NSA)).
 
-This is just the tip of the iceberg regarding privacy issues with Windows 10, I'm pretty sure. I haven't bother to research more.
+This is just the tip of the iceberg regarding privacy issues with Windows 10, I'm pretty sure. I haven't bothered to research more.
 
 Linux's Bash vs. Windows' cmd & Powershell
 ------------------------------------------
 
 For a long time I took "Linux nerds"' foam-coming-out-of-mouth super-provocative opinions as stupid self-worth-promoting
-propaganda, but I've got to say that I'm becoming one of *them*. The more I think about Microsoft, the more I start despising it.
+propaganda, but I've got to say that I'm becoming one of *them*. The more I learn about Microsoft, the more I start despising it.
 
 In recent years I have learned to use Bash more efficiently, and I now realize that it is superior in every sense to `cmd`.
 You can actually run your software's build scripts with Bash, whereas in Windows with `cmd` it varies from *unmanageable* to *very painful*.
