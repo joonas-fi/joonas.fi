@@ -2,7 +2,7 @@
 layout:     post
 title:      '#deletefacebook'
 date:       2018-10-08 10:45:00
-tags:       ['programming']
+tags:       ['technology']
 ---
 
 ![](/images/2018/deletefacebook_stock.png)
