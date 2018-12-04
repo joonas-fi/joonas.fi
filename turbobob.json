@@ -9,7 +9,7 @@
 			"mount_destination": "/project",
 			"dev_command": ["bash"],
 			"dev_ports": ["8084:80"],
-			"dev_pro_tips": ["For preview run $ bin/preview.sh"],
+			"dev_pro_tips": ["For preview run $ bin/preview.sh", "Available at port 8084"],
 			"pass_envs": [],
 			"contextless_build": true
 		}
