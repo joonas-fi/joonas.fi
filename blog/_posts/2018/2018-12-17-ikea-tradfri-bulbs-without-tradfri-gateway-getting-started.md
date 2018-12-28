@@ -174,7 +174,7 @@ Now, inside the container I started by updating apt package list:
 I then installed Nodejs (required for zigbee2mqtt):
 
 	$ apt install -y gnupg curl git make g++ gcc && curl -sL https://deb.nodesource.com/setup_10.x | bash -
-	$ apt-get install -y nodejs
+	$ apt install -y nodejs
 
 And then zigbee2mqtt:
 
@@ -284,7 +284,7 @@ and now smart TV vendors are slowly switching to Bluetooth based remotes. I have
 doesn't work properly (it sometimes stops sending button presses) and the TV is harder to
 automate because instead of a simple IR sender now need more complicated protocols.
 
-Let's enjoy the state of how things are right now, because the benefits only with regarding to
+Let's enjoy the state of how things are right now, because the benefits only with regard to
 privacy are huge - the vendor cannot spy on you if the thing is not connected to the vendor's
 cloud. This "golden age" may not last for very long, since sadly all great tech will
 eventually be tried to exploit people (just look at how unetchical
