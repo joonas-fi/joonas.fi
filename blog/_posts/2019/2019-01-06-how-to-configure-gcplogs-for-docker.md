@@ -17,7 +17,7 @@ Terms:
 
 - [gcplogs](https://docs.docker.com/config/containers/logging/gcplogs/) - the built-in
   plugin of Docker that sends log messages to Stackdriver Logging
-- [Stackdriver Logging](https://cloud.google.com/logging/docs/) - the new name for Google Cloud Logging.
+- [Stackdriver Logging](https://cloud.google.com/logging/docs/) - the new name for Google Cloud (Platform) Logging ("gcp logs").
 
 
 Why Stackdriver Logging?
