@@ -118,3 +118,48 @@ You should also see this:
 	Logging Driver: gcplogs
 
 Your containers' logs should now appear in "Stackdriver Logging" at Google Cloud console.
+
+
+No severity levels or hostname
+------------------------------
+
+The driver [doesn't support](https://github.com/moby/moby/issues/22736)
+`log message severity` at all. Every message shows up in the console as "huh, dunno" type.
+
+Also the hostname does not get appended to the log message metadata. It probably would be
+if we were running on Google Cloud Platform due to its autodiscovery magic. But the
+configuration suggests doing this:
+
+```
+$ docker run --log-driver=gcplogs \
+    --log-opt gcp-project=test-project
+    --log-opt gcp-meta-zone=west1 \
+    --log-opt gcp-meta-name=`hostname` \
+    your/application
+```
+
+The above of course applies to when launching containers manually, but who the hell does
+that in a production environment and does not use an orchestrator? And who wants to
+configure custom log driver for each container and not use the same logger for all containers?
+
+This means that we should put the hostname to Docker's `daemon.json`, which means that we
+should generate it programmatically generate it for each host.
+
+I'm running CoreOS and the base installation is customized via
+[CoreOS Ignition](https://coreos.com/ignition/docs/latest/) and I actually use it to
+generate an immutable base image from which several VMs are launched - so I cannot put the
+hostname into the ignition file, so I would have to build the
+"modify daemon.json dynamically" step at my "bootstrap cluster node" level.
+
+All this to configure a freaking user hostile logging plugin that easily could've let the
+user configure this by implementing recognizing special literal `$hostname` value for
+`gcp-meta-name` and fetch the hostname dynamically!
+
+
+In summary
+----------
+
+It looks like running containers outside of Google's cloud was an afterthought
+to the developers of `gcplogs` logging driver.
+
+It's a shame, because little more work could've brought the experience from "meh" to "awesome!".
