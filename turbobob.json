@@ -5,9 +5,11 @@
 	"builders": [
 		{
 			"name": "default",
-			"dockerfile_path": "build-default.Dockerfile",
+			"uses": "dockerfile://build-default.Dockerfile",
 			"mount_destination": "/project",
-			"dev_command": ["bash"],
+			"commands": {
+				"dev": ["bash"]
+			},
 			"dev_ports": ["8084:80"],
 			"dev_pro_tips": ["For preview run $ bin/preview.sh"],
 			"pass_envs": [],
