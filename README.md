@@ -14,7 +14,7 @@ Dev mode
 For testing the content before making an actual build, run:
 
 ```
-$ ./preview.sh
-Hit this URL in your momma's browser: joonas-blog.dev-laptop.xs.fi
-...
+$ bob dev
 ```
+
+Bob will give you pro-tips on previewing.
