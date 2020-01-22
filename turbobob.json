@@ -14,6 +14,21 @@
 			"dev_pro_tips": ["For preview run $ bin/preview.sh"],
 			"pass_envs": [],
 			"contextless_build": true
+		},
+		{
+			"name": "publisher",
+			"uses": "docker://fn61/buildkit-publisher:20190206_1058_d35b3939",
+			"mount_destination": "/workspace",
+			"commands": {
+				"publish": ["publish.sh", "rel/*"],
+				"dev": ["bash"]
+			},
+			"env": {
+				"BINTRAY_PROJECT": "joonas/dl/joonas.fi-blog"
+			},
+			"pass_envs": [
+				"BINTRAY_CREDS"
+			]
 		}
 	],
 	"docker_images": [
