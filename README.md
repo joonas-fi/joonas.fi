@@ -1,6 +1,4 @@
-[![Build Status](https://img.shields.io/travis/joonas-fi/joonas.fi-blog.svg?style=for-the-badge)](https://travis-ci.org/joonas-fi/joonas.fi-blog)
-[![Download](https://img.shields.io/badge/Download-bintray%20latest-blue.svg?style=for-the-badge)](https://bintray.com/joonas/dl/joonas.fi-blog/_latestVersion#files)
-[![Download](https://img.shields.io/docker/pulls/joonas/joonas.fi-blog.svg?style=for-the-badge)](https://hub.docker.com/r/joonas/joonas.fi-blog/)
+![Build](https://github.com/joonas-fi/joonas.fi-blog/workflows/Build/badge.svg)
 
 What
 ====
