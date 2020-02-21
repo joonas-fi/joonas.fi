@@ -5,37 +5,31 @@
 	"builders": [
 		{
 			"name": "default",
-			"uses": "dockerfile://build-default.Dockerfile",
+			"uses": "docker://joonas/jekyll-builder:0.1.0",
 			"mount_destination": "/project",
+			"workdir": "/project",
 			"commands": {
+				"build": ["bin/build.sh"],
 				"dev": ["bash"]
 			},
 			"dev_ports": ["8084:80"],
-			"dev_pro_tips": ["For preview run $ bin/preview.sh"],
-			"pass_envs": [],
-			"contextless_build": true
+			"dev_pro_tips": ["For preview run $ bin/preview.sh"]
 		},
 		{
 			"name": "publisher",
-			"uses": "docker://fn61/buildkit-publisher:20190206_1058_d35b3939",
+			"uses": "docker://fn61/buildkit-publisher:20200221_1859_befcec04",
 			"mount_destination": "/workspace",
 			"commands": {
-				"publish": ["publish.sh", "rel/*"],
+				"build": ["bin/make-deployerspec.sh"],
+				"publish": ["publish-gh.sh", "joonas-fi/joonas.fi-blog", "rel/"],
 				"dev": ["bash"]
 			},
-			"env": {
-				"BINTRAY_PROJECT": "joonas/dl/joonas.fi-blog"
-			},
 			"pass_envs": [
-				"BINTRAY_CREDS"
+				"GITHUB_TOKEN",
+				"EVENTHORIZON_TENANT",
+				"AWS_ACCESS_KEY_ID",
+				"AWS_SECRET_ACCESS_KEY"
 			]
-		}
-	],
-	"docker_images": [
-		{
-			"image": "joonas/joonas.fi-blog",
-			"dockerfile_path": "Dockerfile",
-			"auth_type": "creds_from_env"
 		}
 	]
 }
