@@ -5,7 +5,11 @@ What
 
 This is source code for my [personal blog](https://joonas.fi/), powered by Jekyll.
 
-It gets built as a static site, shoved inside a Docker image with a bare static HTTP server.
+It gets built as a static site that could be hosted anywhere.
+
+Successfull builds yield a GitHub (draft) release, which is signalled to an event bus where
+from [Deployer](https://github.com/function61/deployer) automatically deploys it into production.
+
 
 Dev mode
 ========
