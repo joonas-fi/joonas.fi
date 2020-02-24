@@ -15,7 +15,7 @@ it scoffs at unnecessary features.
 This post is about where Go fails at minimalism. I.e. these are features I think a truly
 "simple" language should not have.
 
-Note: I'm actually for Go to add generics, pattern matching enums and not a hardcore
+Note: I'm actually for Go to add generics, pattern matching, enums and not a hardcore
 "Go should be simple" -type of person. So I'm not advocating for Go to be hardcore simple -
 these are mainly my observations for:
 
@@ -549,16 +549,23 @@ My gripe is that the annotations are not structural enough to prevent easy mista
 
 I find needing this somewhat rarely. The common reason I need it for is to have a nil pointer:
 
-	var x *MyStruct
+	var person *Person
+	if personName != "" {
+		person = NewPerson(personName)
+	}
 
-Honestly, I was debating on including this because I know it's stupid to criticize without
-offering solutions. I'm not smart enough to say how nil pointers could have been implemented
-in other way, but it's just my observation that I need `var` rarely and it has always felt
-weird to me.
+But you can do the same with this:
+
+	person := (*Person)(nil)
+	if personName != "" {
+		person = NewPerson(personName)
+	}
+
+Again, why two ways to do the same thing?
 
 The other place `var` is needed for is package-level variables - i.e. global mutable state.
 A point could be made about globals (and Go's stdlib uses too much of it - more on this later)
-but pragmatically speaking I get that it's good in moderation.
+but pragmatically speaking I get that there's sometimes a need for them.
 
 
 Other idiosyncrasies in stdlib
