@@ -463,7 +463,7 @@ In real world code I had a case like this recently that crashed at runtime:
 	// should have been:
 	//   var transport http.RoundTripper
 	var transport *http.Transport 
-	if true { // this expression was of course dynamicin my code
+	if true { // this expression was of course dynamic in my code
 		transport = &http.Transport{
 			TLSClientConfig: &tls.Config{
 				ServerName: "foo",
@@ -475,14 +475,14 @@ In real world code I had a case like this recently that crashed at runtime:
 
 `RoundTripper` is an interface, and `*http.Transport` is its concrete implementation.
 `ReverseProxy` takes `RoundTripper` but I gave it `*http.Transport` - it compiles and
-everything should be good, right? No, it crashed at runtime because the type of my
-fucking `var` was nil and not *typed nil*. (╯°□°)╯︵ ┻━┻ 
+everything should be good, right? No, it crashed at runtime because the value of my
+fucking variable was nil and not *at-runtime-typed nil*. (╯°□°)╯︵ ┻━┻ 
 
 
 Semi-unstructured struct member annotations
 -------------------------------------------
 
-To encode a struct as JSON, we can control the key name in JSON with a struct member annotation:
+To encode a struct as JSON, we can control the key name in JSON - with a struct member annotation:
 
 	type person struct {
 		Name string `json:"name"`
@@ -639,7 +639,7 @@ A few from top of my head:
 
 I really wanted to love the [flag](https://pkg.go.dev/flag?tab=doc) package since I
 believe it benefits the entire ecosystem to have one quality package everyone agrees to use
-so there's not 10 competing implementations everyone has to spend time researching and
+so there aren't 10 competing implementations everyone has to spend time researching and
 [vetting](https://www.agwa.name/blog/post/always_review_your_dependencies).
 
 But the flag package is just too weird to be loved - it's different than practically every
