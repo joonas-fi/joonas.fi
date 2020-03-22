@@ -11,8 +11,8 @@ unpublished because I didn't want my blog to be about politics.
 
 But this situation really grinds my gears to see the world pump out a continuous stream of
 news articles and individuals discussing about the coronavirus and I don't think I've seen
-more than one media outlet to assign any blame to China. I wrote this post as a therapy
-for myself.
+more than handful individuals or more than one media outlet assign any blame to China. I
+wrote this post as a therapy for myself.
 
 ![](/images/2020/covid-grinds-my-gears.jpg)
 
@@ -26,7 +26,7 @@ Contents:
 - [What happened](#what-happened)
 - [Why assign blame for accidents?](#why-assign-blame-for-accidents)
 - [Was it gross negligence?](#was-it-gross-negligence)
-- [Argument: the time for blame is not yet](#argument--the-time-for-blame-is-not-yet)
+- [Argument: the time for blame is not yet](#argument-the-time-for-blame-is-not-yet)
 - [Why individuals refuse to blame China?](#why-individuals-refuse-to-blame-china)
 - [Why the media refuses to blame China?](#why-the-media-refuses-to-blame-china)
 - [Far righters and far lefties](#far-righters-and-far-lefties)
@@ -56,7 +56,7 @@ disease (COVID-19) that is causing unmeasurable physical, emotional and financia
 around the world is not random.
 
 To simplify: the virus assembled itself randomly, but the jumping of the virus to the
-[patient zero](https://en.wikipedia.org/wiki/Index_case) could have been prevented.
+[patient zero](https://en.wikipedia.org/wiki/Index_case) **could have been prevented**.
 
 ![](/images/2020/covid-accident-flowchart.png)
 
@@ -80,7 +80,7 @@ What is blame good for? The shame caused by blame has at least these two possibl
 2. Since nobody likes shame, it also motivates other people from making the same mistake.
 
 Blame should not be used lightly. If the accident isn't serious, then blame might not be
-necessary. But if it's a serious accident and it is due to gross negligence, then blame is
+necessary. But if it's a serious accident and due to gross negligence, then blame is
 necessary.
 
 I know gross negligence is
@@ -89,6 +89,8 @@ definition for [negligence](https://www.atltriallaw.com/difference-negligence-gr
 
 > Negligence is the failure of a person to exercise reasonable precautions that any
 > sensible person might take, leading to cause another person a serious harm or injury.
+
+My argument for when blaming is productive:
 
 ![](/images/2020/covid-blame-necessary.png)
 
@@ -105,12 +107,14 @@ Please watch this very good video first, originally titled:
 To summarize that video:
 
 - The meat markets (called "wet markets") have very unhygienic conditions where the animals'
-  cages are stacked on top of each other, where the animals are **forced to shit, piss and
-  bleed on top of each other**.
-- Wildlife farming industry industrialized, which increases the chances diseases spreading
-  because the animals are in small cages close to each other.
-- China knows it's dangerous and tried to ban wildlife meats, but the elite successfully
-  lobbied against it.
+  cages are stacked on top of each other, where they are made to **shit, piss and bleed
+  on top of each other**.
+  * A great way to spread diseases.
+  * Also very cruel.
+- Wildlife farming industry industrialized, which increases the chances of diseases
+  spreading because the animals are in small cages close to each other.
+- China knows it's dangerous and banned wildlife meats before
+  * But the elite successfully lobbied it back.
 
 The description has a great summary of what happened:
 
@@ -163,8 +167,8 @@ It is time for a flowchart: (there should always be time for flowcharts!):
 
 ![](/images/2020/covid-gross-negligence.png)
 
-The important thing to notice is, that all of the answers to the yellow questions are **yes**
-("yes" answers = bad actions), i.e. China didn't do a single redeeming thing.
+The important thing to notice is, that all of China's actions to the yellow questions are
+**yes** (= bad actions), i.e. they didn't do a single redeeming thing.
 
 
 Argument: the time for blame is not yet
@@ -203,7 +207,7 @@ While I agree, it might not be a good idea to call it "chinese coronavirus", imp
 China is not at fault is simply incorrect.
 
 Sure, many countries have made mistakes in preparing for the pandemic, but that does not
-take any blame for China's wrongdoings.
+take away any blame for China's wrongdoings.
 
 
 Why the media refuses to blame China?
@@ -257,23 +261,23 @@ just stupid. Quote from the Vox video:
 > The majority of the people in China do not eat wildlife animals. Those people who consume
 > these wildlife animals are the rich and the powerful –a small minority.
 
-Remember, my criticism is aimed at China (the government) - not the Chinese (all Chinese
-people).
+Remember, the criticism is aimed at the wrongdoings of China (the government) - not the
+Chinese (all Chinese people).
 
 The far lefties will keep virtue signalling and thinking that criticizing China is
 racist/xenophobic.
 
 Both of these far left-or-right stances are silly and only serve to polarize the extremes
-even more because factual discussion cannot be had with people who care more about emotions
-than facts.
+even more because productive discussion cannot be had with people who care more about
+emotions than facts.
 
 
 Closing remarks
 ---------------
 
 I'm pretty much just venting my own frustration. I tried to back my thoughts with logic.
-If I got something wrong - I'm one of those weak willed people who would be happy to form
-new opinions, given new facts.
+If I got something wrong I'd like to hear about it - I'm one of those weak willed people
+who would be happy to form new opinions, given new facts.
 
 Hugs and kisses.
 
