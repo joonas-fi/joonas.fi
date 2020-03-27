@@ -6,8 +6,10 @@ tags:       ['programming', 'technology']
 ---
 
 Kernel probes allow you to attach debug points to the kernel (or even to extend it to some
-extent with persistent hooks). You can attach not just to syscalls, but also pretty much
-any function inside the kernel.
+extent with persistent hooks). You can attach not just to syscalls, but also to many
+functions inside the kernel (they have to be exported functions though).
+
+![](/images/2020/kprobe_fuse.gif)
 
 Disclaimer: these are my notes about **learning about kprobes today**, so I might not know
 what I'm talking about.
@@ -25,6 +27,7 @@ Contents:
 - [Attaching to generic functions (not just syscalls)](#attaching-to-generic-functions-not-just-syscalls)
 - [Good to know](#good-to-know)
 	* [Lifecycle](#lifecycle)
+- [Full example from the animation](#full-example-from-the-animation)
 - [(Bonus) How to test, from userspace, if a program triggers a syscall](#bonus-how-to-test-from-userspace-if-a-program-triggers-a-syscall)
 - [Additional reading](#additional-reading)
 
@@ -235,6 +238,12 @@ There are several types of functions you can hook into, that are supported by BC
 - uprobe, uretprobe
   - [User-level functions](http://www.brendangregg.com/blog/2015-06-28/linux-ftrace-uprobe.html)
 
+To see if you can attach to a function, see if it exists in `/proc/kallsyms`:
+
+	$ cat /proc/kallsyms | grep fuse_open
+	0000000000000000 T fuse_open_common
+	0000000000000000 t fuse_open
+
 In BCC (or the Python-based toolkit) there's a magical naming convention - if you define
 your hook function as a suffix of e.g. `kprobe__`, you don't have to call
 `bpf.attach_kprobe(...)` since it wires this automatically.
@@ -294,6 +303,27 @@ tl;dr: BPF hooks are automatically detached when the process that attached it ex
 
 There is also a
 [mechanism for persisting objects](https://facebookmicrosites.github.io/bpf/blog/2018/08/31/object-lifetime.html#bpffs).
+
+
+Full example from the animation
+-------------------------------
+
+[Here's the code I used](/images/2020/kprobe_fuse.py) to produce the animated GIF at the
+top of this post. It demonstrates passing structured data from the probe into the Python
+program for formatting and resolving the opcodes into a string.
+
+The events are delivered via a ring buffer -backed bus so theoretically it can lose events.
+You can't block in the kernel if the receiving process misbehaves or is slow, so that's a
+wise compromise.
+
+To get this working, things got a bit hairy since some of the Linux kernel headers were
+missing from the Debian package that are in the actual Linux kernel repo. There might be a
+good reason and I'm just don't know about it yet.
+
+I had to copy the header files `fuse_i.h` and `refcount.h` into
+`/usr/src/linux-headers-4.4.0-116/include/linux/` to get it working, and also copypaste
+`typedef unsigned __bitwise __poll_t;` inline from some place where it was defined.
+
 
 
 (Bonus) How to test, from userspace, if a program triggers a syscall
