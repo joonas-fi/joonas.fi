@@ -5,9 +5,12 @@ date:       2020-03-27 13:00:00
 tags:       ['programming', 'technology']
 ---
 
-Kernel probes allow you to attach debug points to the kernel (or even to extend it to some
-extent with persistent hooks). You can attach not just to syscalls, but also to many
-functions inside the kernel (they have to be exported functions though).
+Kernel probes allow you to dynamically attach debug points to the kernel (or even to extend
+it to some extent with persistent hooks). You can attach not just to syscalls, but also to
+many functions inside the kernel (they have to be exported functions though).
+
+Dynamically means, that you don't have to recompile the kernel and/or restart your computer -
+it's pretty cool!
 
 ![](/images/2020/kprobe_fuse.gif)
 
@@ -22,11 +25,13 @@ Contents:
 - [What can I use it for?](#what-can-i-use-it-for)
 - [Prerequisite tools](#prerequisite-tools)
 - [Your first program](#your-first-program)
+  * [What does the code above do?](#what-does-the-code-above-do)
 - [Triggering the probe](#triggering-the-probe)
 - [Filtering or accessing function arguments](#filtering-or-accessing-function-arguments)
 - [Attaching to generic functions (not just syscalls)](#attaching-to-generic-functions-not-just-syscalls)
 - [Good to know](#good-to-know)
-	* [Lifecycle](#lifecycle)
+  * [Lifecycle](#lifecycle)
+  * [What does eBPF code look like?](#what-does-ebpf-code-look-like)
 - [Full example from the animation](#full-example-from-the-animation)
 - [(Bonus) How to test, from userspace, if a program triggers a syscall](#bonus-how-to-test-from-userspace-if-a-program-triggers-a-syscall)
 - [Additional reading](#additional-reading)
@@ -36,7 +41,7 @@ Background
 ----------
 
 Linux kernel probes (kprobe) are implemented using
-[eBFP](https://en.wikipedia.org/wiki/Berkeley_Packet_Filter).
+[eBPF](https://en.wikipedia.org/wiki/Berkeley_Packet_Filter).
 
 eBPF is kind of like BPF v2 and apparently people just shorten eBPF to BPF. So in common
 use BPF can mean the "classic" version or the newer eBPF. (Or technically, the
@@ -123,6 +128,21 @@ rarely but which I could trigger easily (`syncfs`).
 
 Run this with `$ python3 probe.py` (you probably need `sudo`). It shouldn't print anything
 until you trigger the syscall from another program.
+
+
+### What does the code above do?
+
+Let's unpack this a bit. You're seeing C code inside a string in a Python program. The
+Python module for bcc will call the BCC compiler to use LLVM to compile this C code into
+eBPF code, which the bcc Python module will then ask the Linux kernel to execute. Same
+mumbo jumbo as a drawing:
+
+![](/images/2020/kprobe_bcc-flow.png)
+
+The important thing to note is that once the eBPF program is compiled, it's essentially a
+static build artefact which in itself could be attached to the kernel, without needing the
+BCC, LLVM compilers or the Python-based toolkit. This all dynamic stuff is here just to
+help you iterate on building these programs quickly.
 
 
 Triggering the probe
@@ -245,7 +265,7 @@ To see if you can attach to a function, see if it exists in `/proc/kallsyms`:
 	0000000000000000 t fuse_open
 
 In BCC (or the Python-based toolkit) there's a magical naming convention - if you define
-your hook function as a suffix of e.g. `kprobe__`, you don't have to call
+your hook function with a prefix of e.g. `kprobe__`, you don't have to call
 `bpf.attach_kprobe(...)` since it wires this automatically.
 
 Here's an example of me successfully tracing a function inside FUSE:
@@ -277,6 +297,10 @@ Here's an example of me successfully tracing a function inside FUSE:
 
 It successfully logs the name of the file given to `fuse_open_common`.
 
+The trick is that if you have a function `int reticulate_splines(int count)`, your probe needs
+to be written as `int kprobe__reticulate_splines(struct pt_regs *ctx, int count)`, i.e.
+the template is `int kprobe__<function to probe>(struct pt_regs *ctx, <function arguments>)`.
+
 Note: I had to add  `#include <linux/fs.h>` to be able to use the struct definitions.
 
 Pro-tip: if you're wondering why including headers isn't always required, it's because
@@ -304,6 +328,53 @@ tl;dr: BPF hooks are automatically detached when the process that attached it ex
 There is also a
 [mechanism for persisting objects](https://facebookmicrosites.github.io/bpf/blog/2018/08/31/object-lifetime.html#bpffs).
 
+### What does eBPF code look like?
+
+There are probably better ways to get generated eBPF code out, but when I made a mistake
+when making eBPF program, the compiler showed me the code:
+
+	bpf: Failed to load program: Invalid argument
+	0: (bf) r6 = r1
+	1: (79) r7 = *(u64 *)(r6 +104)
+	2: (b7) r8 = 0
+	3: (7b) *(u64 *)(r10 -8) = r8
+	4: (7b) *(u64 *)(r10 -16) = r8
+	5: (7b) *(u64 *)(r10 -24) = r8
+	6: (7b) *(u64 *)(r10 -32) = r8
+	7: (7b) *(u64 *)(r10 -40) = r8
+	8: (63) *(u32 *)(r10 -64) = r8
+	9: (bf) r3 = r7
+	10: (07) r3 += 8
+	11: (bf) r1 = r10
+	12: (07) r1 += -64
+	13: (b7) r2 = 4
+	14: (85) call 4
+	15: (61) r1 = *(u32 *)(r10 -64)
+	16: (63) *(u32 *)(r10 -40) = r1
+	17: (7b) *(u64 *)(r10 -64) = r8
+	18: (bf) r1 = r10
+	19: (07) r1 += -64
+	20: (b7) r2 = 8
+	21: (bf) r3 = r7
+	22: (85) call 4
+	23: (79) r1 = *(u64 *)(r10 -64)
+	24: (7b) *(u64 *)(r10 -32) = r1
+	25: (85) call 5
+	26: (7b) *(u64 *)(r10 -24) = r0
+	27: (b7) r1 = 10
+	28: (6b) *(u16 *)(r10 -44) = r1
+	29: (b7) r1 = 1931812922
+	30: (63) *(u32 *)(r10 -48) = r1
+	31: (18) r1 = 0x6e6f6d6d6f635f6e
+	33: (7b) *(u64 *)(r10 -56) = r1
+	34: (18) r1 = 0x65706f5f65737566
+	36: (7b) *(u64 *)(r10 -64) = r1
+	37: (bf) r1 = r10
+	38: (07) r1 += -64
+	39: (b7) r2 = 22
+	40: BUG_ld_00
+	invalid BPF_LD_IMM insn
+
 
 Full example from the animation
 -------------------------------
@@ -318,7 +389,7 @@ wise compromise.
 
 To get this working, things got a bit hairy since some of the Linux kernel headers were
 missing from the Debian package that are in the actual Linux kernel repo. There might be a
-good reason and I'm just don't know about it yet.
+good reason but I don't know why they're different.
 
 I had to copy the header files `fuse_i.h` and `refcount.h` into
 `/usr/src/linux-headers-4.4.0-116/include/linux/` to get it working, and also copypaste
