@@ -43,7 +43,7 @@ how the image is made up:
 I identified the `<path>` element that contains the LEDs. The problem is that the same element
 contains a bunch of other stuff too.
 
-Maybe I can break the LEDs away from the larger paths into three more paths (one for each
+Maybe I can break the LEDs away from the larger path into three more paths (one for each
 invividual LED), so instead of:
 
 	<path d="all the stuff" />
@@ -63,8 +63,8 @@ It looks like garbage:
 	<path d="M142.4 25.604a1.218 1.218 0 000-2.435 1.218 1.218 0 000 2.435zM111.586 25.822l1.778-1.778c.3-.302.3-.793 0-1.093a.771.771 0 00-.546-.224.77.77 0 00-.545.224l-1.779 1.779a.767.767 0 000 1.092.79.79 0 001.092 0z..."/>
 
 I read the tutorials (mentioned in [Additional reading](#additional-reading)) to understand,
-that this is a highly-compressed form that we can expand to make easier to understand. There
-might be tools for this (I tried to quickly find but came up short) but I did this by hand.
+that this is a highly-compressed form that we can expand to make it easier to understand.
+There might be tools for this (I tried to quickly find but came up short) but I did this by hand.
 
 The above is the same as:
 
@@ -120,7 +120,7 @@ The result
 ----------
 
 Now it was just a matter of moving the code for the LEDs to separate paths, and giving each
-element and ID (so I can control them from JavaScript).
+element an ID (so I can control them from JavaScript).
 
 Here's the new SVG (some parts omitted):
 
