@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![My Facebook profile pic](https://graph.facebook.com/1359885168/picture?type=large)
+![Picture of me](/images/me.jpg)
 
 My name is Joonas, and I'm a software engineer from Finland. I run
 [function61.com](https://function61.com/). For my open source work,
