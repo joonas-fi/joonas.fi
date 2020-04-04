@@ -16,7 +16,7 @@ google_analytics: "UA-24122659-1"
 # Optional features
 animated:           true
 show_related_posts: true
-show_post_footers:  false
+show_post_footers:  true
 show_social_icons:  true
 
 # Disqus post comments
