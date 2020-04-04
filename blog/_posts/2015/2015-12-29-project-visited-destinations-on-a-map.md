@@ -3,6 +3,7 @@ layout:     post
 title:      'Project: visited destinations on a map'
 date:       2015-12-28 00:00:00
 tags:       ['travel']
+permalink:  /2015/12/28/project-visited-destinations-on-a-map/
 ---
 
 I love to travel, and have tried to visit at least a couple of destinations each year.

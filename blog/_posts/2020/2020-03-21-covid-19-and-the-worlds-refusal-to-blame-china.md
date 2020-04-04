@@ -3,6 +3,7 @@ layout:     post
 title:      'COVID-19 and the world´s refusal to blame China'
 date:       2020-03-21 18:52:00
 tags:       ['politics']
+permalink:  /2020/03/21/covid-19-and-the-worlds-refusal-to-blame-china/
 ---
 
 I didn't really want to write about politics in my blog - in fact I wrote a lengthy,

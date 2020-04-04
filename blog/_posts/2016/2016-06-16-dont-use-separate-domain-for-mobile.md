@@ -3,6 +3,7 @@ layout:     post
 title:      'Don´t use separate domain for mobile'
 date:       2016-06-16 00:00:00
 tags:       ['usability']
+permalink:  /2016/06/16/dont-use-separate-domain-for-mobile/
 ---
 
 Unfortunately, redirecting to `m.` prefix for mobile browsers is quite popular. The downside of this is that when people share a link to the content, and if another person follows the link on a desktop or a laptop, the view is horrible:

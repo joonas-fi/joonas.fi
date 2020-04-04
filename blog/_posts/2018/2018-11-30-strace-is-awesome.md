@@ -3,6 +3,7 @@ layout:     post
 title:      'strace is awesome'
 date:       2018-11-30 14:30:00
 tags:       ['programming']
+permalink:  /2018/11/30/strace-is-awesome/
 ---
 
 Your periodic reminder that [strace](https://strace.io/) is awesome..

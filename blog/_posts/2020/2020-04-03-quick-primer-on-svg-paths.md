@@ -3,6 +3,7 @@ layout:     post
 title:      'Quick primer on SVG paths'
 date:       2020-04-03 09:15:00
 tags:       ['programming', 'technology']
+permalink:  /2020/04/03/quick-primer-on-svg-paths/
 ---
 
 SVG, or Scalable Vector Graphics, is a file format for vector drawings. I had a problem to

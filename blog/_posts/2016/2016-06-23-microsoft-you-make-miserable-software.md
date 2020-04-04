@@ -3,6 +3,7 @@ layout:     post
 title:      'Microsoft, you make miserable software'
 date:       2016-06-23 00:00:00
 tags:       ['technology']
+permalink:  /2016/06/23/microsoft-you-make-miserable-software/
 ---
 
 There are so many reasons that I cannot just let this go anymore, and instead I'll spend my precious time to write this blog post

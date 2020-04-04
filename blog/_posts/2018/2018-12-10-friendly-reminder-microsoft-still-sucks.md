@@ -3,6 +3,7 @@ layout:     post
 title:      'Friendly reminder: Microsoft still sucks'
 date:       2018-12-10 11:30:00
 tags:       ['programming']
+permalink:  /2018/12/10/friendly-reminder-microsoft-still-sucks/
 ---
 
 Continuing the series of

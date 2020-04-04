@@ -3,6 +3,7 @@ layout:     post
 title:      'Linux kernel probing'
 date:       2020-03-27 13:00:00
 tags:       ['programming', 'technology']
+permalink:  /2020/03/27/linux-kernel-probing/
 ---
 
 Kernel probes allow you to dynamically attach debug points to the kernel (or even to extend

@@ -3,6 +3,7 @@ layout:     post
 title:      'Every website will get hacked - how to prepare for it'
 date:       2016-09-23 08:29:00
 tags:       ['technology']
+permalink:  /2016/09/23/every-website-will-get-hacked-how-to-prepare-for-it/
 ---
 
 Every website will get hacked?

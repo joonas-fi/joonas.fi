@@ -3,6 +3,7 @@ layout:     post
 title:      'Preventing outdated docs links in software projects'
 date:       2020-04-04 11:40:00
 tags:       ['programming']
+permalink:  /2020/04/04/preventing-outdated-docs-links-in-software-projects/
 ---
 
 When I started making documentation for [Varasto](https://github.com/function61/varasto),

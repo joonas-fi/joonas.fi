@@ -3,6 +3,7 @@ layout:     post
 title:      'TCP proxy in node.js'
 date:       2015-07-14 19:03:00
 tags:       ['programming']
+permalink:  /2015/07/14/tcp-proxy-in-nodejs/
 ---
 
 Use like this:

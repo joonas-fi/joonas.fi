@@ -3,6 +3,7 @@ layout:     post
 title:      'Thoughts on Docker'
 date:       2016-06-17 00:00:00
 tags:       ['programming']
+permalink:  /2016/06/17/thoughts-on-docker/
 ---
 
 Now that I've been actively messing around with Docker for more than 6 months, and run production software on top of it, it's a good time to share my findings.

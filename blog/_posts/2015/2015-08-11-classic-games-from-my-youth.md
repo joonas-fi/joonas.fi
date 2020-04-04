@@ -3,7 +3,7 @@ layout:     post
 title:      'Classic games from my youth'
 date:       2015-08-11 10:47:00
 tags:       ['gaming']
-
+permalink:  /2015/08/11/classic-games-from-my-youth/
 ---
 
 Here's a summary of my youth, in alphabetical order.

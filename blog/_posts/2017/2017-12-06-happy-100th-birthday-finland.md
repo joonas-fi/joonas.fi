@@ -3,6 +3,7 @@ layout:     post
 title:      'Happy 100th birthday, Finland!'
 date:       2017-12-06 21:00:00
 tags:       ['life']
+permalink:  /2017/12/06/happy-100th-birthday-finland/
 ---
 
 Perkele! Finland just turned 100 years.

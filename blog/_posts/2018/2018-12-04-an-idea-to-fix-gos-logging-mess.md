@@ -3,6 +3,7 @@ layout:     post
 title:      'An idea to fix Go´s logging mess'
 date:       2018-12-04 09:30:00
 tags:       ['programming']
+permalink:  /2018/12/04/an-idea-to-fix-gos-logging-mess/
 ---
 
 I believe I have came up with an acceptable compromise for the logger mess in Go. This is

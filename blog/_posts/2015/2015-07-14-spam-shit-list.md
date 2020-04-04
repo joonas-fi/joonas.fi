@@ -2,7 +2,7 @@
 layout:     post
 title:      Spam shit list
 date:       2015-07-14 19:03:00
-# summary:    This is an empty post to illustrate the pagination component with Pixyll.
+permalink:  /2015/07/14/spam-shit-list/
 ---
 
 The following is a list of organisations, who have decided to send me email without my consent:

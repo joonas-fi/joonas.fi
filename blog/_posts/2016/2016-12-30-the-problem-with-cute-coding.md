@@ -3,6 +3,7 @@ layout:     post
 title:      'The problem with "cute coding"'
 date:       2016-12-30 14:42:00
 tags:       ['programming']
+permalink:  /2016/12/30/the-problem-with-cute-coding/
 ---
 
 For lack of a better term, I call this "cute coding":

@@ -3,6 +3,7 @@ layout:     post
 title:      'Chrome: huge cache usage'
 date:       2015-12-27 15:00:00
 tags:       ['technology']
+permalink:  /2015/12/27/chrome-huge-cache-usage/
 ---
 
 I had this issue where Chrome browser was using 20 GB of cache, effectively suffocating my SSD's 60 GB system partition.

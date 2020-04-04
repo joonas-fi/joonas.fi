@@ -3,6 +3,7 @@ layout:     post
 title:      'I forgot my password to my Unifi controller'
 date:       2018-10-20 12:10:00
 tags:       ['technology']
+permalink:  /2018/10/20/i-forgot-my-password-to-my-unifi-controller/
 ---
 
 ![](/images/2018/unificontroller-invalidpassword.png)

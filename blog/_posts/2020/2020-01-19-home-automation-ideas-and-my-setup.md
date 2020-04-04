@@ -3,6 +3,7 @@ layout:     post
 title:      'Home automation ideas & my setup'
 date:       2020-01-19 10:50:00
 tags:       ['home automation']
+permalink:  /2020/01/19/home-automation-ideas-and-my-setup/
 ---
 
 I've got so many good automation ideas from other people, so it's fair that I pay it

@@ -3,6 +3,7 @@ layout:     post
 title:      'SoundCloud: migrating a monolith to a microservices architecture'
 date:       2015-07-29 09:00:00
 tags:       ['programming']
+permalink:  /2015/07/29/soundcloud-migrating-a-monolith-to-a-microservices-architecture/
 ---
 
 Awesome read! A three-part series:

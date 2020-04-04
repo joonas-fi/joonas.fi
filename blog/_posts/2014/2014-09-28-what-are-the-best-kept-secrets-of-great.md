@@ -4,6 +4,7 @@ title: What are the best-kept secrets of great programmers?
 date: '2014-09-28T13:40:56+00:00'
 tags: ['programming']
 tumblr_url: http://joonas-fi.tumblr.com/post/98624571927/what-are-the-best-kept-secrets-of-great
+permalink:  /2014/09/28/what-are-the-best-kept-secrets-of-great/
 ---
 
 Quora: [What are the best-kept secrets of great programmers?](http://www.quora.com/What-are-the-best-kept-secrets-of-great-programmers)

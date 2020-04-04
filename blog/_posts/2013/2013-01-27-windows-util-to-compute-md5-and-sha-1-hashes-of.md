@@ -4,6 +4,7 @@ title: Windows util to compute MD5 and SHA-1 hashes of files
 date: '2013-01-27T11:35:01+00:00'
 tags: ['programming']
 tumblr_url: http://joonas-fi.tumblr.com/post/41597523039/windows-util-to-compute-md5-and-sha-1-hashes-of
+permalink:  /2013/01/27/windows-util-to-compute-md5-and-sha-1-hashes-of/
 ---
 
 ![](/images/2013/01/tumblr_inline_mha2mbu8NV1qz4rgp.png)

@@ -3,6 +3,7 @@ layout:     post
 title:      'Stop using protocol-relative URLs'
 date:       2016-12-27 14:48:00
 tags:       ['programming']
+permalink:  /2016/12/27/stop-using-protocol-relative-urls/
 ---
 
 I still see this confusingly often, even with Twitter's timeline embedding feature. Protocol relative URLs

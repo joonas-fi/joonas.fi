@@ -3,6 +3,7 @@ layout:     post
 title:      'Modem drops internet every now and then? I made a modem rebooter util'
 date:       2020-02-22 16:30:00
 tags:       ['technology']
+permalink:  /2020/02/22/modem-rebooter/
 ---
 
 My issues are rare enough to warrant switching to another modem, so I just hacked around

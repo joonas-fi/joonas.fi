@@ -3,6 +3,7 @@ layout:     post
 title:      'Pet peeve: "if and only if"'
 date:       2018-12-28 11:20:00
 tags:       ['programming']
+permalink:  /2018/12/28/pet-peeve-if-and-only-if/
 ---
 
 I find this to be highly annoying:

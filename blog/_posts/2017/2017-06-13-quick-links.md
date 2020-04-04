@@ -3,6 +3,7 @@ layout:     post
 title:      'Quick links'
 date:       2017-06-13 16:26:00
 tags:       ['programming']
+permalink:  /2017/06/13/quick-links/
 ---
 
 - [Why Slack is inappropriate for open source communications](https://dave.cheney.net/2017/04/11/why-slack-is-inappropriate-for-open-source-communications)

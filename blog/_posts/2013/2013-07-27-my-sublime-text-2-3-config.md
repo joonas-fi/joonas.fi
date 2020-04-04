@@ -4,6 +4,7 @@ title: My Sublime Text (2 & 3) config
 date: '2013-07-27T15:59:00+00:00'
 tags: ['programming']
 tumblr_url: http://joonas-fi.tumblr.com/post/56601684361/my-sublime-text-2-3-config
+permalink:  /2013/07/27/my-sublime-text-2-3-config/
 ---
 
 1) Disable word wrap

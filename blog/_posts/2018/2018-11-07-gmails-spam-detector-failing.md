@@ -3,6 +3,7 @@ layout:     post
 title:      'GMail´s spam detector failing?'
 date:       2018-11-07 12:30:00
 tags:       ['technology']
+permalink:  /2018/11/07/gmails-spam-detector-failing/
 ---
 
 For quite some time, I've been having lots of problems with GMail spam detector's false

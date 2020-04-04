@@ -2,7 +2,7 @@
 layout:     post
 title:      'Software that does not suck'
 date:       2015-08-23 09:47:00
-
+permalink:  /2015/08/23/software-that-does-not-suck/
 ---
 
 It's pretty time consuming to research which software you want to use for a specific task. Here I've compiled a list of my preferences for, in my opinion, the best software for different tasks.

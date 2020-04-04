@@ -3,6 +3,7 @@ layout:     post
 title:      'How to configure gcplogs (Google Cloud Logging) for Docker'
 date:       2019-01-06 12:45:00
 tags:       ['programming']
+permalink:  /2019/01/06/how-to-configure-gcplogs-for-docker/
 ---
 
 .. from a perspective where you are not running your VM on a Google datacenter - if you

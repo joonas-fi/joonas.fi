@@ -3,6 +3,7 @@ layout:     post
 title:      '#deletefacebook'
 date:       2018-10-08 10:45:00
 tags:       ['technology']
+permalink:  /2018/10/08/deletefacebook/
 ---
 
 ![](/images/2018/deletefacebook_stock.png)

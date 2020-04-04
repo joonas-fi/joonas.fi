@@ -3,6 +3,7 @@ layout:     post
 title:      'Windows Disk Cleanup throws you into deeper trouble'
 date:       2019-03-20 10:30:00
 tags:       ['technology']
+permalink:  /2019/03/20/windows-disk-cleanup-throws-you-into-deeper-trouble/
 ---
 
 I've been quite vocal about my distaste for most things Microsoft before, and here comes

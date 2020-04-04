@@ -3,6 +3,7 @@ layout:     post
 title:      'Implementing your hiring process with C trivia'
 date:       2017-03-30 21:59:00
 tags:       ['programming']
+permalink:  /2017/03/30/implementing-your-hiring-process-with-c-trivia/
 ---
 
 I got a newsletter from [Toggl](https://toggl.com/) (a time-tracking app) that

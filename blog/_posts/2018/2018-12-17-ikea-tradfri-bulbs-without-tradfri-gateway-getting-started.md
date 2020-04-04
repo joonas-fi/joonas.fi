@@ -3,6 +3,7 @@ layout:     post
 title:      'IKEA Trådfri bulbs without Trådfri gateway: getting started (complete instructions)'
 date:       2018-12-17 11:00:00
 tags:       ['home automation']
+permalink:  /2018/12/17/ikea-tradfri-bulbs-without-tradfri-gateway-getting-started/
 ---
 
 TL;DR; control all Zigbee devices (Philips Hue, Xiaomi smarthome, IKEA Trådfri etc etc.)

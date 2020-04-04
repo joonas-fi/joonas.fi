@@ -3,6 +3,7 @@ layout:     post
 title:      'Warning about PayPal - disabled my account without warning'
 date:       2020-01-14 15:30:00
 tags:       ['technology']
+permalink:  /2020/01/14/warning-about-paypal/
 ---
 
 Summary: PayPal suspended my account without warning and didn't efficiently tell what's

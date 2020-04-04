@@ -3,6 +3,7 @@ layout:     post
 title:      'Chaining should be an operator in the language itself'
 date:       2018-10-05 11:45:00
 tags:       ['programming']
+permalink:  /2018/10/05/chaining-should-be-an-operator-in-the-language-itself/
 ---
 
 What is chaining?

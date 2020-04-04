@@ -4,6 +4,7 @@ title: ! 'putty:[profile] URL handler'
 date: '2013-01-26T14:49:00+00:00'
 tags: ['programming']
 tumblr_url: http://joonas-fi.tumblr.com/post/41517045456/putty-profile-protocol-handler
+permalink:  /2013/01/26/putty-profile-protocol-handler/
 ---
 
 Why: To share clickable shortcuts to PuTTY profiles in version control. Shortcuts to .exes cannot be shared because PuTTY install paths on all machines might not be the same.

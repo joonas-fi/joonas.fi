@@ -3,6 +3,7 @@ layout:     post
 title:      'Concurrency in Golang and the importance of using locks'
 date:       2017-02-20 20:05:00
 tags:       ['programming']
+permalink:  /2017/02/20/concurrency-in-golang-and-the-importance-of-using-locks/
 ---
 
 Have this innocent looking code in [Golang](https://golang.org/):

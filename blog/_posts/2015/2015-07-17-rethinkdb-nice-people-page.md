@@ -3,6 +3,7 @@ layout:     post
 title:      'RethinkDB: nice "people" -page'
 date:       2015-07-17 00:23:00
 tags:       ['design']
+permalink:  /2015/07/17/rethinkdb-nice-people-page/
 ---
 
 ![](/images/2015/07/rethinkdb-nice-page.png)

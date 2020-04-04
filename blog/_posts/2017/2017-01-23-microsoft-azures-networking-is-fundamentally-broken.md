@@ -3,6 +3,7 @@ layout:     post
 title:      'Problems with Microsoft Azure´s networking'
 date:       2017-01-23 15:56:00
 tags:       ['programming']
+permalink:  /2017/01/23/microsoft-azures-networking-is-fundamentally-broken/
 ---
 
 **UPDATE, IMPORTANT**

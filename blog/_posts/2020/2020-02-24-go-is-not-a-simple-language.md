@@ -3,6 +3,7 @@ layout:     post
 title:      'Go is not a simple language'
 date:       2020-02-24 11:37:00
 tags:       ['programming']
+permalink:  /2020/02/24/go-is-not-a-simple-language/
 ---
 
 I still love Go and it's the best language I've used - but like in mature relationships,
