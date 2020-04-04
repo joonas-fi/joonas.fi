@@ -273,8 +273,8 @@ very good). This means though that you cannot compile code that imports a packag
 side effects, unless you use a special syntax to tell the compiler "yes, this is what I
 want". This is the syntax: `import _ "path/to/module"`.
 
-I get that side effects can be useful sometimes.. But side effects are used somewhat widely
-often in Go's stdlib (more of this later). This looks like the language gives first-class
+I get that side effects can be useful sometimes.. But side effects are somewhat often
+used in Go's stdlib (more of this later). This looks like the language gives first-class
 support for doing something that should be frowned upon. I think there just could've been
 a warning suppression through an annotation syntax or a more shameful keyword like
 `import _side_effects "path/to/module"` :D.
@@ -283,7 +283,7 @@ a warning suppression through an annotation syntax or a more shameful keyword li
 `import . "something"`
 ----------------------
 
-This will import all of package's identifiers so intead of `something.Foo` you can just
+This will import all of package's identifiers so instead of `something.Foo` you can just
 use `Foo`.
 
 I don't know of any code that uses this, and in fact I learned of this just today. This
