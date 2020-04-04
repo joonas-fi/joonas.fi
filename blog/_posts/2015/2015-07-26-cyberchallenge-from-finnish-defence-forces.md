@@ -2,7 +2,7 @@
 layout:     post
 title:      Cyberchallenge from Finnish defence forces
 date:       2015-07-26 11:25:00
-tags:       ['programming']
+tags:       ['infosec']
 permalink:  /2015/07/26/cyberchallenge-from-finnish-defence-forces/
 ---
 

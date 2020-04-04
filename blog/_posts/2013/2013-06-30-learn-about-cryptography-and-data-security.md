@@ -2,7 +2,7 @@
 layout: post
 title: Learn about Cryptography and Data Security
 date: '2013-06-30T11:51:34+00:00'
-tags: ['programming']
+tags: ['infosec']
 tumblr_url: http://joonas-fi.tumblr.com/post/54247359584/learn-about-cryptography-and-data-security
 permalink:  /2013/06/30/learn-about-cryptography-and-data-security/
 ---
