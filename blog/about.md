@@ -37,4 +37,5 @@ Software I really like (I'm not getting paid to say any of these):
 - [Docker](https://www.docker.com/)
 - [Hugo](https://gohugo.io/)
 - [Bootstrap](https://getbootstrap.com/)
+- [ScreenToGif](https://www.screentogif.com/)
 - [TortoiseHg](https://tortoisehg.bitbucket.io/) (Mercurial VCS GUI - you can also pull/push Git repos)
