@@ -36,6 +36,12 @@
 @import 'pagination';
 @import 'tagcloud';
 
+/* pompo500: fix (or improve) code formatting */
+
+code {
+	white-space: pre;
+}
+
 /* pompo500: fix god-ugly table style */
 
 article.post-content table {
