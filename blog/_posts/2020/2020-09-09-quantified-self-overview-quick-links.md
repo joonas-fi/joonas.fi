@@ -170,6 +170,7 @@ Quick links
 	* Carefully curated list of awesome Quantified Self resources.
 	* (See also meta series on [awesome lists](https://github.com/sindresorhus/awesome) if
 	  you're not deep enough in internet rabbit holes.)
+- [r/QuantifiedSelf](https://www.reddit.com/r/QuantifiedSelf/) - QS subreddit
 - [What Chris Dancy Learned From 700+ Sensors, Devices & Apps](https://www.youtube.com/watch?v=GIagQKCNuxk) (video)
 - [What data on myself I collect and why?](https://beepb00p.xyz/my-data.html) by karlicoss
 - [Dogsheep](https://dogsheep.github.io/)
