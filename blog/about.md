@@ -39,3 +39,7 @@ Software I really like (I'm not getting paid to say any of these):
 - [Bootstrap](https://getbootstrap.com/)
 - [ScreenToGif](https://www.screentogif.com/)
 - [TortoiseHg](https://tortoisehg.bitbucket.io/) (Mercurial VCS GUI - you can also pull/push Git repos)
+
+Bonus content (in Finnish):
+
+- [Hauskoja yritysten nimiä](/fi/sekalaista/hauskoja-yritysten-nimia/) (eng: business name puns)
