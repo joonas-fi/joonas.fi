@@ -4,8 +4,10 @@ title: Hauskoja yritysten nimiä
 permalink: /fi/sekalaista/hauskoja-yritysten-nimia/
 ---
 
-Ellei erikseen mainittu, niin olen itse keksinyt idean jostain sairaan mieleni perukoista. Saatat
-huomata ideoissa toistuvan teeman.. Myös mustaa huumoria löytyy - tarkoitus ei silti ole loukata ketään.
+Ellei erikseen mainittu, niin olen itse keksinyt ideat jostain sairaan mieleni perukoista (saatat
+huomata ideoissa toistuvan teeman..).
+
+Myös mustaa huumoria löytyy - tarkoitus ei silti ole loukata ketään.
 
 P.S. jos löytyi joku kiva nimi ja perustat firman, niin vaadin 50 % tuotoista rojalteiksi.
 
