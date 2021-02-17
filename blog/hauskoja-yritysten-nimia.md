@@ -18,11 +18,15 @@ Sanaleikit liikeidean ja nimen välillä
 - Logistiikka-alan yritys: *Toimitus johtaja*
 - Sänkyliike, jossa ostosmusiikkina soitetaan vain Metallicaa: *Nothing else mattress*
 - Homoeroottinen elokuva: *Suomalaista melankolinaa*
+- Aikuisviihde-elokuva: *Lempiohjelma*
 - Kissakahvila: *Kattila*
+- Pakkotyö-leipomo vankilassa: *Pakkopulla*
+- Hevostalli: *Turvallinen tila*
 - Otsatukkiin erikoistunut parturi-kampaamo: *Bang gang*
 - Kellosepänliike: *Tuntikaupalla*
 - Deittisivusto: *Mitä vittua?*
 - Yökerho: *Baila10*
+- Kalastuskoulu: *Kala-aste*
 - Seksivalmennuskursseja: *Coitus-koitos*
 - Turvallinen paikka itsensä viiltelylle: *Harmin paikka*
 - Kondomeja: *Pilit pussiin*
