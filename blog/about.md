@@ -42,4 +42,4 @@ Software I really like (I'm not getting paid to say any of these):
 
 Bonus content (in Finnish):
 
-- [Hauskoja yritysten nimiä](/fi/sekalaista/hauskoja-yritysten-nimia/) (eng: business name puns)
+- [Hauskoja liikeidea-nimiä](/fi/sekalaista/hauskoja-liikeidea-nimia/) (eng: business idea puns)

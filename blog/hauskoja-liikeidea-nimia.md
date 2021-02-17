@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hauskoja yritysten nimiä
-permalink: /fi/sekalaista/hauskoja-yritysten-nimia/
+title: Hauskoja liikeidea-nimiä
+permalink: /fi/sekalaista/hauskoja-liikeidea-nimia/
 ---
 
 Ellei erikseen mainittu, niin olen itse keksinyt ideat jostain sairaan mieleni perukoista (saatat
@@ -22,6 +22,7 @@ Sanaleikit liikeidean ja nimen välillä
 - Kissakahvila: *Kattila*
 - Pakkotyö-leipomo vankilassa: *Pakkopulla*
 - Hevostalli: *Turvallinen tila*
+	* Hevosopiston ensimmäinen oppitunti: Turvallisuus
 - Otsatukkiin erikoistunut parturi-kampaamo: *Bang gang*
 - Kellosepänliike: *Tuntikaupalla*
 - Deittisivusto: *Mitä vittua?*
