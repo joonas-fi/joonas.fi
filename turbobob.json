@@ -14,6 +14,7 @@
 			},
 			"dev_http_ingress": "80",
 			"dev_shell_commands": [
+				{ "command": "bin/new-post.sh", "important": true },
 				{ "command": "bin/preview.sh", "important": true }
 			]
 		},
