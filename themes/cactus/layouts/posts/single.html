@@ -88,7 +88,11 @@
 
   <hr />
 
-  {{ template "_internal/disqus.html" . }}
+  {{ partial "disqus.html" . }}
+
+  {{/* Jekyll used to use "/2018/12/28/pet-peeve-if-and-only-if" as Disqus thread id (without slash
+       in the end), and therefore we can't use this internal disqus thing but have to use custom instead */}}
+  {{/* {{ template "_internal/disqus.html" . }} */}}
 
   {{ partial "page_nav_mobile.html" . }}
 
