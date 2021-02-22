@@ -1,0 +1,55 @@
+<header id="header">
+  <a href="{{ .Site.BaseURL | relURL }}">
+  {{ if (isset .Site.Params "gravatar") }}
+    <div id="logo" style="background-image: url(https://www.gravatar.com/avatar/{{ md5 .Site.Params.gravatar }}?s=100&d=identicon)"></div>
+  {{ else if (isset .Site.Params "logo") }}
+    <div id="logo" style="background-image: url({{ .Site.Params.logo | relURL }})"></div>
+  {{ else }}
+    <div id="logo" style="background-image: url({{ "images/logo.png" | relURL }})"></div>
+  {{ end}}
+  <div style="display: flex; justify-content: space-between;">
+	  <div id="title" style="align-self: flex-start;">
+	    <h1>{{ .Site.Title }}</h1>
+	  </div>
+
+	  <div id="nav" style="align-self: flex-end;">
+	    <ul>
+	      <li class="icon">
+	        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+	      </li>
+	      {{ range .Site.Menus.main }}
+	        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+	      {{ end }}
+	    </ul>
+	  </div>
+  </div>
+  </a>
+
+
+  <section id="about">
+  {{ if isset .Site.Params "description" }}
+    {{ .Site.Params.description }}
+  {{ end }}
+  {{ if isset .Site.Params "social" }}
+      <span style="float: right;">
+      {{ $length := (len .Site.Params.social) }}
+      {{ range $index, $elem := .Site.Params.social}}
+      {{ if eq $elem.name "email" }}
+        <a class="icon" target="_blank" rel="noopener" href="mailto:{{ $elem.link }}">
+          <i class="fas fa-envelope"></i>
+        </a>
+        {{ else if eq $elem.name "rss" }}
+        <a class="icon" target="_blank" rel="noopener" href="{{ $elem.link }}">
+          <i class="fas fa-rss"></i>
+        </a>
+        {{ else }}
+        <a class="icon" target="_blank" rel="noopener" href="{{ $elem.link }}">
+          <i class="fab fa-{{ lower $elem.name }}"></i>
+        </a>
+        {{ end }}
+      {{ end }}
+      </span>
+  {{ end }}
+  </section>
+</header>
+
