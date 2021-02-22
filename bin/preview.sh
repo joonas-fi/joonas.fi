@@ -1,7 +1,5 @@
-#!/bin/bash -eu
+#!/bin/sh
 
-jekyll serve \
-	-H 0.0.0.0 \
-	-P 80 \
-	--source /project/blog/ \
-	--destination /tmp
+set -eu
+
+hugo server --bind 0.0.0.0 --port 80

@@ -1,0 +1,22 @@
+
+.post-footer, .post-footer * {
+	text-align: center;
+}
+
+.field-light, .button-big {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 8px;
+	display: block;
+}
+
+/* Actual code blocks are within div.highlight > pre > code and we don't want to color them,
+   only "inline-upticked" keywords */
+p code, ul code, ol code {
+	background: #FFFBE6;
+}
+
+/* Prevent headings from looking like links */
+h3 {
+	text-decoration: none !important;
+}

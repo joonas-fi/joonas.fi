@@ -5,15 +5,17 @@
 	"builders": [
 		{
 			"name": "default",
-			"uses": "docker://joonas/jekyll-builder:0.1.0",
-			"mount_destination": "/project",
-			"workdir": "/project",
+			"uses": "dockerfile://build-default.Dockerfile",
+			"mount_destination": "/workspace",
+			"workdir": "/workspace",
 			"commands": {
 				"build": ["bin/build.sh"],
-				"dev": ["bash"]
+				"dev": ["sh"]
 			},
-			"dev_ports": ["8084:80"],
-			"dev_pro_tips": ["For preview run $ bin/preview.sh"]
+			"dev_http_ingress": "80",
+			"dev_shell_commands": [
+				{ "command": "bin/preview.sh", "important": true }
+			]
 		},
 		{
 			"name": "publisher",

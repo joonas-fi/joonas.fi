@@ -1,13 +1,11 @@
-#!/bin/bash -eu
+#!/bin/sh -eu
 
-rm -rf build/
-mkdir build
-jekyll build --source blog/ --destination build/
+set -eu
 
-# Docker build fails without this with error msg:
-# no permission to read from '/tmp/bob/joonas.fi-blog/workspace/.sass-cache/...
-rm -rf .sass-cache rel/
+rm -rf public
 
-mkdir rel
+mkdir -p rel/
 
-(cd build/ && tar -czf ../rel/site.tar.gz *)
+hugo
+
+(cd public/ && tar -czf ../rel/site.tar.gz *)

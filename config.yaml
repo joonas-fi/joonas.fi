@@ -1,0 +1,60 @@
+baseURL: https://joonas.fi/
+languageCode: en-us
+title: joonas.fi
+theme: cactus
+permalinks:
+  posts: /:year/:month/:title/
+params:
+  author: Joonas
+  gravatar: pompo500@xs.fi
+  description: "Let’s get to work ᕕ( ᐛ )ᕗ"
+  rss: true
+  tagsOverview: true
+  showallpostsonhomepage: true
+  css:
+    - "css/custom.css"
+  social:
+    - name: twitter
+      link: https://twitter.com/joonas_fi
+    - name: github
+      link: https://github.com/function61/
+    - name: stack-overflow
+      link: https://stackoverflow.com/users/2176740/joonas-fi
+    - name: linkedin
+      link: https://www.linkedin.com/in/joonas-fi/
+    - name: rss
+      link: /feed.xml
+  googleAnalyticsAsync: true
+
+googleAnalytics: 'UA-24122659-1'
+
+DisqusShortname: 'joonas-fi'
+
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: About
+      url: /about/
+      weight: 2
+    - name: Contact
+      url: /contact/
+      weight: 3
+
+markup:
+  highlight:
+    # rainbow_dash is ok (though colors all over the place)
+    # lovelace is otherwise good but I can't differentiate function call and string colors
+    # pastie is ok but has ugly strings
+    # abap and vs are good but do not differentiate identifiers and function calls
+    style: rainbow_dash # https://github.com/alecthomas/chroma/tree/master/styles
+
+
+paginate: 25 # ballpark: try to show 3 different years
+
+# rename default index.xml to feed.xml (=> backwards compat w/ Jekyll)
+outputFormats:
+  RSS:
+    mediatype: "application/rss"
+    baseName: "feed"
