@@ -3,7 +3,7 @@
 What
 ====
 
-This is source code for my [personal blog](https://joonas.fi/), powered by Jekyll.
+This is source code for my [personal blog](https://joonas.fi/), powered by [Hugo](https://gohugo.io/).
 
 It gets built as a static site that could be hosted anywhere.
 
