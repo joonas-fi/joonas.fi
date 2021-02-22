@@ -1,6 +1,7 @@
 ---
 date: "2017-06-13T16:26:00Z"
 tags:
+- technology
 - programming
 title: Quick links
 url: /2017/06/13/quick-links/

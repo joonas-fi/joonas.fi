@@ -1,7 +1,7 @@
 ---
 date: "2018-12-28T11:20:00Z"
 tags:
-- programming
+- technology
 title: 'Pet peeve: "if and only if"'
 url: /2018/12/28/pet-peeve-if-and-only-if/
 ---

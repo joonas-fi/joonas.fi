@@ -1,7 +1,7 @@
 ---
 date: "2020-08-02T11:00:00Z"
 tags:
-- programming
+- technology
 title: Restore accidentally deleted/replaced binary of a running process
 ---
 

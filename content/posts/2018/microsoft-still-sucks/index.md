@@ -1,7 +1,7 @@
 ---
 date: "2018-12-10T11:30:00Z"
 tags:
-- programming
+- technology
 title: 'Friendly reminder: Microsoft still sucks'
 url: /2018/12/10/friendly-reminder-microsoft-still-sucks/
 ---
