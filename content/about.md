@@ -1,6 +1,5 @@
 ---
 title: About
-permalink: /about/
 ---
 
 ![Picture of me](/images/me.jpg)
