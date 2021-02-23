@@ -53,6 +53,10 @@ markup:
 
 paginate: 25 # ballpark: try to show 3 different years
 
+outputs:
+  home: # do not generate nonsensical top-level RSS feed because it'd contain about/contact pages etc.
+    - HTML
+
 # rename default index.xml to feed.xml (=> backwards compat w/ Jekyll)
 outputFormats:
   RSS:
