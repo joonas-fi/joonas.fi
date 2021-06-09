@@ -10,6 +10,10 @@ because I did not host anything that should consume dramatically more resources 
 
 ![Monthly AWS bills trending up month-over-month](s3bill-upward-trend.png)
 
+Happy AWS billing day:
+
+![](aws-billing-day.gif)
+
 
 Why is S3 costing so much?
 --------------------------
