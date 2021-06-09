@@ -1,9 +1,9 @@
 ---
 title: "Coding pattern: preventing the use of '0 results' as a loading indicator"
 tags:
-- TODO
+- programming
+- usability
 date: 2021-06-09T07:29:32Z
-# draft: true
 ---
 
 The use of 0-results-as-a-loading-indicator is really prevalent. It is horrible UX, as it is directly lying to the user.
