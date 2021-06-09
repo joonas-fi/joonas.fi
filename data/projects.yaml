@@ -1,8 +1,12 @@
 list:
-  - name: function61.com
-    url: https://function61.com/
-    desc: My company
+  - name: Varasto
+    url: https://function61.com/varasto/
+    desc: All your files in one simple, replicated, encrypted place - with built-in backups and configurable ransomware protection.
 
   - name: Emergency details printout
     url: https://joonas.fi/emergency-details-printout/
     desc: Website for printing an "emergency details" paper for helping deal with situations that need quick attention
+
+  - name: function61.com
+    url: https://function61.com/
+    desc: My company
