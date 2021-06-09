@@ -150,6 +150,9 @@ standards:
 
 Maybe because some people refer to UEFI BIOS, people use the term "legacy BIOS" to mean "yes, I'm really talking about the old IBM-era BIOS".
 
+(Sidenote:
+[there exist also other firmware standards](https://asahilinux.org/2021/03/progress-report-january-february-2021/#bridging-two-worlds), like DeviceTree)
+
 
 ### EFI system partition
 
