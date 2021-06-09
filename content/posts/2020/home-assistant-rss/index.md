@@ -67,11 +67,14 @@ for the Markdown card looks like this:
 
 Hope this helps you!
 
+UPDATE: Someone asked me for my code, and I decided to polish it a bit and put it up as a
+ready-to-use program: [RSS-to-homeassistant](https://github.com/joonas-fi/rss-to-homeassistant).
+
 
 My over-engineered solution
 ---------------------------
 
-Now this one is for total nerds.
+Now this one is for total nerds and not related to Home Assistant anymore..
 
 Since I had to do the RSS pulling myself anyway, and I am software engineer and a
 [data hoarder](https://www.reddit.com/r/DataHoarder/), I push all new RSS items into an
