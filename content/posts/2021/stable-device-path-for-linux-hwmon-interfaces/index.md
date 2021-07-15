@@ -25,6 +25,10 @@ Example use case where you might need stable paths is use in
 The solution
 ------------
 
+Let's write a [udev rule](https://wiki.archlinux.org/title/udev#About_udev_rules) to make a stable
+device path to the CPU temperature.
+
+
 ### Identify hwmon interface (for this boot)
 
 Identify the [hwmon interface](https://www.kernel.org/doc/html/latest/hwmon/hwmon-kernel-api.html)
@@ -80,13 +84,11 @@ Many people suggest that [die temperature is the one you should pay attention to
 
 ### Find out details for udev rule
 
-We need to write an [udev rule](https://wiki.archlinux.org/title/udev#About_udev_rules) to give our
+We need to write a udev rule to give our
 CPU temperature reading a path that does not change.
 
 Now that we know the hwmon interface is at `/sys/class/hwmon/hwmon2` (for this boot), we can interrogate its
-udev attributes to begin writing the rule.
-
-Query the hwmon interfaces's attributes, so we can write a rule that matches the specific device:
+udev attributes, so we can write a rule that matches the specific device:
 
 ```console
 $ udevadm info --attribute-walk --path=/sys/class/hwmon/hwmon2
