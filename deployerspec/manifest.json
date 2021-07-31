@@ -1,14 +1,7 @@
 {
   "manifest_version_major": 1,
-  "deployer_image": "fn61/edgerouter:20200218_1015_e619de47",
-  "deploy_command": [
-    "edgerouter",
-    "s3",
-    "deploy",
-    "${_.env.edgerouterAppId}",
-    "${_.version.friendly}",
-    "site.tar.gz"
-  ],
+  "deployer_image": "fn61/edgerouter:20210730_1633_49503f3d",
+  "deploy_command": ["deploy-turbocharger-site.sh", "${_.env.edgerouterAppId}"],
   "deploy_interactive_command": ["/bin/sh"],
   "download_artefacts": [
     "site.tar.gz"
@@ -33,9 +26,15 @@
       "help": ""
     },
     {
-      "key": "EVENTHORIZON_TENANT",
+      "key": "TURBOCHARGER_STORE",
       "optional": false,
-      "placeholder": "prod:1",
+      "placeholder": "s3://us-east-1/mybucket",
+      "help": "The data store for Turbocharger to deploy the site to"
+    },
+    {
+      "key": "EVENTHORIZON",
+      "optional": false,
+      "placeholder": "prod:1:::us-east-1",
       "help": ""
     }
   ],
