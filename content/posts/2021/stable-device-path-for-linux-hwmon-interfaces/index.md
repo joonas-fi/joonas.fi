@@ -146,7 +146,7 @@ ACTION=="add", SUBSYSTEM=="hwmon", ATTRS{vendor}=="0x1022", ATTRS{device}=="0x15
 
 ```
 
-It's safe on each boot make the symlink, because `/dev` is a non-persistent (= RAM-based) filesystem.
+It's safe on each boot to make a new symlink, because `/dev` is a non-persistent (= RAM-based) filesystem.
 
 
 ### Test the rule
@@ -161,7 +161,7 @@ Unload module index
 Unloaded link configuration context.
 ```
 
-If the output specifies the `run: <make symlink>` line, the rule matches and you're good.
+If the output includes the `run: <make symlink>` line, the rule matched and you're good.
 
 
 ### Sidenote: udev native symlinks don't seem to work for hwmon
