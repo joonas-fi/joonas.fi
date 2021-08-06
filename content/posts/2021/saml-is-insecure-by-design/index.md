@@ -22,6 +22,10 @@ is about communicating these authentication & identity details across organizati
 
 ![](saml-overview.png)
 
+Update: although Google [supports SAML](https://support.google.com/a/answer/6087519) use cases,
+Google/Facebook primarily use OAuth2 for these "Sign in with Google" general public authentication flows.
+It was my bad for not clarifying that I used these more of *example of what Single-sign on means*.
+
 
 Why should I care?
 ------------------
