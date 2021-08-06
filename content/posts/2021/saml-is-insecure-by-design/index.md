@@ -410,7 +410,12 @@ relies on a single-sign-on component implemented in JavaScript (not even TypeScr
 Additional reading
 ------------------
 
-- https://mattermost.com/blog/securing-xml-implementations-across-the-web/
+- https://mattermost.com/blog/securing-xml-implementations-across-the-web/ writeup on the round-trip
+  vulnerability from [@jupenur](https://twitter.com/jupenur) (the researcher who found it)
+
+- https://twitter.com/jupenur/status/1423397250278084610 [@jupenur](https://twitter.com/jupenur)'s thread on SAML in general
+
+- https://news.ycombinator.com/item?id=25424267 where a maintainer of an affected SAML library echoes some sentiments of my blog post.
 
 - https://twitter.com/pquerna/status/1349234347266564096 (pquerna has authored security-related open source like a TOTP library)
 
