@@ -8,7 +8,7 @@ mkdir -p rel/
 
 hugo
 
-# the root-level RSS feed includes about/contact pages etc, and there's no easy way to fix it without
+# the root-level RSS feed includes about/contact/today-i-learned pages etc, and there's no easy way to fix it without
 # overriding (and taking ownership of) the RSS template, so replace the root-level (actually, we also
 # disabled rednering it) feed with the blog-specific feed instead.
 #

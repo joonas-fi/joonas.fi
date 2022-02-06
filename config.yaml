@@ -35,12 +35,15 @@ menu:
     - name: Home
       url: /
       weight: 1
+    - name: Today I Learned
+      url: /today-i-learned/
+      weight: 2
     - name: About
       url: /about/
-      weight: 2
+      weight: 3
     - name: Contact
       url: /contact/
-      weight: 3
+      weight: 4
 
 markup:
   highlight:
@@ -53,9 +56,7 @@ markup:
 
 paginate: 25 # ballpark: try to show 3 different years
 
-outputs:
-  home: # do not generate nonsensical top-level RSS feed because it'd contain about/contact pages etc.
-    - HTML
+# we could disable nonsensical top-level RSS feed here, but then it doesn't show up in the HTML
 
 # rename default index.xml to feed.xml (=> backwards compat w/ Jekyll)
 outputFormats:
