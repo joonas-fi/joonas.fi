@@ -1,3 +1,5 @@
+⬆️ For table of contents, click the above icon
+
 ![Build](https://github.com/joonas-fi/joonas.fi-blog/workflows/Build/badge.svg)
 
 What
