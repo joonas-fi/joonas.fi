@@ -7,6 +7,10 @@ list:
     url: https://joonas.fi/emergency-details-printout/
     desc: Website for printing an "emergency details" paper for helping deal with situations that need quick attention
 
+  - name: Complaint corner
+    url: /complaint-corner/
+    desc: I don't want to flood my blog with negativity, so I have a dedicated section to air out my grievances
+
   - name: function61.com
     url: https://function61.com/
     desc: My company

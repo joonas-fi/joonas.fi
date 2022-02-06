@@ -1,11 +1,8 @@
 {{ define "main"}}
-<span class="h1">Today I Learned</span>
+<span class="h1">Complaint corner</span>
 
-<p>Sharing the things I've learned, for paying back some of the help I've gotten from others doing so. 🥰</p>
-
-<p>Disclaimer: These are somewhat low-effort posts.
-I'm usually writing about things I've recently learned, so I'm not an expert on the subject.
-Expect some inaccuracies, think for yourself and always practice critical thinking.</p>
+<p>I don’t want to flood my blog with negativity, so here's a dedicated section to air out my grievances.
+Because it helps to air it out, even if no one's reading. 😄</p>
 
 <div id="archive">
   <ul class="post-list">
@@ -17,7 +14,7 @@ Expect some inaccuracies, think for yourself and always practice critical thinki
     {{ end }}
     <li class="post-item">
       <div class="meta">
-      	<time datetime="{{ time .Date }}" itemprop="datePublished">{{ .Date.Format "Jan 02" }}</time>
+        <time datetime="{{ time .Date }}" itemprop="datePublished">{{ .Date.Format "Jan 02" }}</time>
 
         {{ if gt .Params.tags 0 }}
         <div class="article-tag">
