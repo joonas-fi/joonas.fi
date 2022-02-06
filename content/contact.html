@@ -3,10 +3,12 @@ title: Say hello
 ---
 
 <div class="py2">
-  <form action="https://function61.com/webform/form/dDhisEfRA74/submit" method="POST" class="form-stacked">
-    <input type="text" name="_sender_email" class="field-light" placeholder="Email Address">
-    <textarea type="text" name="_content" class="field-light" rows="5" placeholder="What would you like to say?"></textarea>
+  <form action="https://formspree.io/joonas@joonas.fi" method="POST" class="form-stacked">
+    <input type="text" name="email" class="field-light" placeholder="Email Address">
+    <textarea type="text" name="content" class="field-light" rows="5" placeholder="What would you like to say?"></textarea>
     <input type="hidden" name="_next" value="https://joonas.fi/contact-thanks.html" />
+    <input type="hidden" name="_subject" value="New submission!" />
+    <input type="text" name="_gotcha" style="display:none" />
     <input type="submit" class="button button-blue button-big mobile-block" value="Say hello">
   </form>
 </div>
