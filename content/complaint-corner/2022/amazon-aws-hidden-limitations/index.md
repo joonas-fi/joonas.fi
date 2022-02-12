@@ -24,7 +24,7 @@ And sure enough, verifying this from UI, the menu item simply disappears when yo
 {{< video src="aws-email-service-not-available-in-all-regions" >}}
 
 (NOTE: the "Unavailable" operation is only due to me changing the region *from* "Email receiving"
-page - the warning wasn't visible to me before I wasn't even aware the page can be in the manu)
+page - the warning wasn't visible to me before I wasn't even aware the page can be in the menu)
 
 How hard would it have been to have the "Email receiving" link in menu with passive color with "?"
 icon next to it with a tooltip explaining that this feature isn't available in this region?

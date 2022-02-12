@@ -155,7 +155,7 @@ By now you probably realize that this pattern can be generalized to also pass ot
 Some examples follow.
 
 
-### Available file space scheck
+### Available file space check
 
 Let's say that you're writing an installer function that requires that there must be 2 GB of available space
 in the partition, and you don't want to check that requirement inside the function (the check has
