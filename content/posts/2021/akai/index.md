@@ -365,8 +365,8 @@ func akaiSendSettings(ctx context.Context) error {
 }
 ```
 
-This is open source code, but is not published yet as of me writing this. It will land in
+This is open source code, but is not officially published yet as of me writing this. It will land in
 [Hautomo](https://github.com/function61/hautomo) (my home automation software).
 
-If you're in a hurry and are interested in the code, contact me and I'll share you the unpublished code!
-
+If you're in a hurry and are interested in the code, I have put up the [.zip for download](akai.zip).
+License: do not use in commercial code.
