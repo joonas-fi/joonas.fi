@@ -23,3 +23,14 @@ This is clearly a dark pattern to punish those who wish to unsubscribe.
 There's also no "Unsubscribe from all future mailing lists", so you just know that once they add a
 new mailing list named "Hot keycaps recommended by Justin Bieber", you'll be by-default-subscribed,
 and you've to go unsubscribe from it again.
+
+
+Update two weeks later
+----------------------
+
+The above happened two weeks before. Now it's 23th of April.
+
+They're still sending me spam, despite me having ticked off all checkboxes:
+
+{{< video src="still-sending-spam" >}}
+
