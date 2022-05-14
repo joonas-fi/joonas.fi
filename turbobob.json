@@ -1,7 +1,8 @@
 {
 	"for_description_of_this_file_see": "https://github.com/function61/turbobob",
 	"version_major": 1,
-	"project_name": "joonas.fi-blog",
+	"project_name": "joonas.fi",
+	"project_emoji_icon": "📝",
 	"builders": [
 		{
 			"name": "default",
@@ -24,7 +25,7 @@
 			"mount_destination": "/workspace",
 			"commands": {
 				"build": ["bin/make-deployerspec.sh"],
-				"publish": ["publish-gh.sh", "joonas-fi/joonas.fi-blog", "rel/"],
+				"publish": ["publish-gh.sh", "joonas-fi/joonas.fi", "rel/"],
 				"dev": ["bash"]
 			},
 			"pass_envs": [

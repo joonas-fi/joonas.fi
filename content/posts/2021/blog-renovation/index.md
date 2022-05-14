@@ -39,7 +39,7 @@ Since you're reading this with the new visuals, here's how the old visuals looke
 ### Template selection process
 
 The facelift idea has been brewing for > 2 years. When I've seen something I like, I've written it down
-[here](https://github.com/joonas-fi/joonas.fi-blog/issues/24), so when the time comes the ideas are
+[here](https://github.com/joonas-fi/joonas.fi/issues/24), so when the time comes the ideas are
 all in the same place.
 
 I was not expecting to find a near-100 % match from [Hugo themes](https://themes.gohugo.io/) and was

@@ -38,4 +38,4 @@ Summary
 All systems have problems from time to time, but the amount of issues indicate a systemic problem.
 Disqus is garbage.
 
-[Need to research better options](https://github.com/joonas-fi/joonas.fi-blog/issues/69).
+[Need to research better options](https://github.com/joonas-fi/joonas.fi/issues/69).
