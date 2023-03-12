@@ -13,6 +13,14 @@ Successfull builds yield a GitHub (draft) release, which is signalled to an even
 from [Deployer](https://github.com/function61/deployer) automatically deploys it into production.
 
 
+Header images
+=============
+
+- Go to https://labs.openai.com/ to create art, save it as `header.jpg` in the post's dir
+- Add the prompt as alt text `header_image_alt` in an article
+- Resize it to 1000px wide: `$ convert header.jpg -resize 1000x header.smaller.jpg`
+
+
 Dev mode
 ========
 

@@ -1,4 +1,9 @@
 
+/* Hero images in blog posts */
+img.hero {
+	width: 100%;
+}
+
 .post-footer, .post-footer * {
 	text-align: center;
 }
