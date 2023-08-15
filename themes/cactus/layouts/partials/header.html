@@ -7,14 +7,14 @@
   {{ else }}
     <div id="logo" style="background-image: url({{ "images/logo.png" | relURL }})"></div>
   {{ end}}
-  <div style="display: flex; justify-content: space-between;">
+  <div id="subHeader" style="display: flex; justify-content: space-between;">
 	  <div id="title" style="align-self: flex-start;">
 	    <h1>{{ .Site.Title }}</h1>
 	  </div>
 
-	  <div id="nav" style="align-self: flex-end;">
-	    <ul>
-	      <li class="icon">
+	  <div id="nav">
+	    <ul id="nav-ul">
+	      <li id="nav-icon" class="icon">
 	        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
 	      </li>
 	      {{ range .Site.Menus.main }}
