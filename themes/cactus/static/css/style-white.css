@@ -652,6 +652,9 @@
     -webkit-filter: none;
   }
   @media screen and (max-width: 480px) {
+    #subHeader {
+      flex-direction: column;
+    }
     #header #title {
       display: table;
       margin-right: 5rem;
@@ -660,6 +663,9 @@
     #header #title h1 {
       display: table-cell;
       vertical-align: middle;
+    }
+    #header #nav ul {
+      padding-bottom: 1rem;
     }
     #header #nav ul a:hover {
       background: none;
@@ -670,8 +676,8 @@
     }
     #header #nav ul li.icon {
       position: absolute;
-      top: 77px;
-      right: 1rem;
+      top: 57.6px;
+      right: 0rem;
       display: inline-block;
     }
     #header #nav ul.responsive li {
