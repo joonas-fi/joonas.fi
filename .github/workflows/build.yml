@@ -2,6 +2,10 @@ name: Build
 
 on: [push]
 
+permissions:
+  contents: write # write required to create releases. read would allow for repo content only
+  packages: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,3 +23,42 @@ jobs:
         EVENTHORIZON_TENANT: ${{ secrets.EVENTHORIZON_TENANT }}
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+    - name: Docker meta
+      id: meta
+      uses: docker/metadata-action@v5
+      with:
+        images: ghcr.io/joonas-fi/joonas.fi
+        tags: |
+          type=sha
+          type=ref,event=branch
+          type=raw,value=latest,enable=${{ endsWith(github.ref, github.event.repository.default_branch) }}
+
+    - name: Login to GitHub Container Registry
+      uses: docker/login-action@v3
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Push
+      run: |
+        set -eu
+
+        cd rel/
+
+        # this construction looks a bit cumbersome to get workflow variable content to this shell
+        # script variable but it correctly preserves quotes and supports multi-line output.
+        metadata_json=$(cat <<EOF
+        ${{ steps.meta.outputs.json }}
+        EOF
+        )
+
+        # map annotations to args like `--annotation=org.opencontainers.image.created="2024-07-25T08:46:20.547Z"`
+        annotation_args="$(echo "$metadata_json" | jq -r '.labels | to_entries[] | "--annotation=\(.key)=\"\(.value)\""' | tr '\n' ' ')"
+
+        # tags to format "tag1,tag2"
+        tags="$(echo "$metadata_json" | jq -r '.tags | join(",")')"
+
+        # eval needed to expand the quotes in each `--annotation=key="value"` element
+        eval "oras push $annotation_args $tags site.tar.gz:application/vnd.com.function61.turbocharger.v1+gzip deployerspec.zip:application/vnd.com.function61.deployer.v1+x-zip"
