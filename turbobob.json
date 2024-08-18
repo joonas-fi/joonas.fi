@@ -21,18 +21,15 @@
 		},
 		{
 			"name": "publisher",
-			"uses": "docker://fn61/buildkit-publisher:20200221_1859_befcec04",
+			"uses": "docker://fn61/buildkit-publisher:20240818_1000_092960ea",
 			"mount_destination": "/workspace",
 			"commands": {
 				"build": ["bin/make-deployerspec.sh"],
-				"publish": ["publish-gh.sh", "joonas-fi/joonas.fi", "rel/"],
+				"publish": ["publish-docker.sh", "--user=joonas-fi", "--repo=joonas.fi", "--image-ref-base=ghcr.io/joonas-fi/joonas.fi"],
 				"dev": ["bash"]
 			},
 			"pass_envs": [
-				"GITHUB_TOKEN",
-				"EVENTHORIZON_TENANT",
-				"AWS_ACCESS_KEY_ID",
-				"AWS_SECRET_ACCESS_KEY"
+				"EVENTHORIZON"
 			]
 		}
 	]

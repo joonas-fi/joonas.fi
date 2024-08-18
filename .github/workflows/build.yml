@@ -3,7 +3,7 @@ name: Build
 on: [push]
 
 permissions:
-  contents: write # write required to create releases. read would allow for repo content only
+  contents: read
   packages: write
 
 jobs:
@@ -19,10 +19,7 @@ jobs:
         ./bob build in-ci-autodetect-settings
 
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        EVENTHORIZON_TENANT: ${{ secrets.EVENTHORIZON_TENANT }}
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        EVENTHORIZON: ${{ secrets.EVENTHORIZON }}
 
     - name: Docker meta
       id: meta
