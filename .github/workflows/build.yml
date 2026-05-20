@@ -15,8 +15,9 @@ jobs:
 
     - name: Build
       run: |
-        curl --fail --location --no-progress-meter --output bob https://function61.com/go/turbobob-latest-stable-linux-amd64 && chmod +x bob
-        ./bob build in-ci-autodetect-settings
+        set -eu
+        docker run --rm -v /usr/local/bin:/host --entrypoint= ghcr.io/function61/turbobob:latest sh -c 'cp $(which bob) /host/'
+        bob build in-ci-autodetect-settings
 
       env:
         EVENTHORIZON: ${{ secrets.EVENTHORIZON }}
@@ -37,6 +38,8 @@ jobs:
         registry: ghcr.io
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
+
+    - uses: oras-project/setup-oras@v2
 
     - name: Push
       run: |
