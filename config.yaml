@@ -28,7 +28,8 @@ params:
 
 googleAnalytics: 'UA-24122659-1'
 
-DisqusShortname: 'joonas-fi'
+# disabled due to ads: https://ryansouthgate.com/goodbye-disqus/
+# DisqusShortname: 'joonas-fi'
 
 menu:
   main:
