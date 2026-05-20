@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204 36" width="204" height="36">
+  <rect x="0.5" y="0.5" width="203" height="35" rx="5" fill="#fff" stroke="#d1d5db"/>
+  <g fill="#4b5563" transform="translate(10, 10)">
+    <circle cx="8" cy="4" r="3"/>
+    <path d="M2.5 15c0-3 2.5-4.8 5.5-4.8s5.5 1.8 5.5 4.8v1h-11z"/>
+  </g>
+  <text x="34" y="22.5" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" letter-spacing="0.3" fill="#4b5563">
+    <tspan>100% written </tspan><tspan font-weight="700" fill="#1f2937">by human</tspan>
+  </text>
+</svg>

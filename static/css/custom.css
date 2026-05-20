@@ -35,3 +35,12 @@ h3 {
 	margin-bottom: 16px;
 	border-radius: 3px;
 }
+
+/* height of AI disclosure is side-by-side w/ these but it's taller and default bottom-alignment looks ugly */
+.postdate, .article-tag {
+	vertical-align: top;
+}
+
+.ai-disclosure {
+	display: inline;
+}
