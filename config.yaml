@@ -18,8 +18,6 @@ params:
       link: https://twitter.com/joonas_fi
     - name: github
       link: https://github.com/function61/
-    - name: stack-overflow
-      link: https://stackoverflow.com/users/2176740/joonas-fi
     - name: linkedin
       link: https://www.linkedin.com/in/joonas-fi/
     - name: rss
