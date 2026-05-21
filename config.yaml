@@ -5,6 +5,7 @@ theme: cactus
 permalinks:
   posts: /:year/:month/:title/
 params:
+  colortheme: dark
   author: Joonas
   gravatar: pompo500@xs.fi
   description: "Let’s get to work ᕕ( ᐛ )ᕗ"
