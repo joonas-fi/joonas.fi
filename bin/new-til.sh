@@ -4,8 +4,7 @@ set -eu
 
 title="$1"
 
-# TODO: translate spaces to dashes
-id="$title"
+id=$(printf '%s' "$title" | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
 
 year=$(date +"%Y")
 

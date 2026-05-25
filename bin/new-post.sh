@@ -2,7 +2,9 @@
 
 set -eu
 
-id="$1"
+title="$1"
+
+id=$(printf '%s' "$title" | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
 
 year=$(date +"%Y")
 
